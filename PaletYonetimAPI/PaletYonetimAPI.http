@@ -1,0 +1,6 @@
+@PaletYonetimAPI_HostAddress = http://localhost:5120
+
+GET {{PaletYonetimAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
