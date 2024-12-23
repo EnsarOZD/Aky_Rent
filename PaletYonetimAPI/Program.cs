@@ -71,6 +71,7 @@ app.MapGet("/api/palet/list", (AppDbContext context) =>
 
 app.MapPost("/api/palet/add", async (AppDbContext context, PaletEntity palet) =>
 {
+	
 	try
 	{
 		context.Palets.Add(palet);
@@ -83,6 +84,37 @@ app.MapPost("/api/palet/add", async (AppDbContext context, PaletEntity palet) =>
 	}
 })
 .WithName("AddPalet")
+.WithOpenApi();
+
+app.MapGet("/api/customer/list", (AppDbContext context) =>
+{
+	try
+	{
+		var customer = context.Customers.ToList();
+		return Results.Ok(customer);
+	}
+	catch (Exception ex)
+	{
+		return Results.Problem($"Bir hata oluþtu: {ex.Message}");
+	}
+})
+.WithName("GetCustomerList")
+.WithOpenApi();
+
+app.MapPost("/api/customer/add", async (AppDbContext context, CustomerEntity customer) =>
+{
+	try
+	{
+		context.Customers.Add(customer);
+		await context.SaveChangesAsync();
+		return Results.Ok(new { message = "Mþteri baþarýyla eklendi", customer });
+	}
+	catch (Exception ex)
+	{
+		return Results.Problem($"Bir hata oluþtu: {ex.Message}");
+	}
+})
+.WithName("AddCustomer")
 .WithOpenApi();
 
 app.Run();

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HBDyyXrrvy79/LMcz3UUspiGqTeR5OZefstMBfamsXrj+azAnxXsDyicoegVX92RoAe95FhCZV5im9BzoQeo+w==",
+  "dgSpecHash": "pjdEHsujusPr4l872gv+WQq2T/wu8E4NzJdJhtcMBL7tsIvrtM6RPElYxeDdNF8DjZRDrTTbSv82HcuQGBaryQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ensar\\Desktop\\Eğitim\\Projeler\\palet-yonetim\\PaletYonetimAPI\\PaletYonetimAPI.csproj",
+  "projectFilePath": "C:\\Users\\ensar\\Desktop\\Eğitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimAPI\\PaletYonetimAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ensar\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\ensar\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

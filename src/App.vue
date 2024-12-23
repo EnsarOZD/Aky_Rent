@@ -1,18 +1,21 @@
 <template>
-  <div>
-    <PaletEkle />
-    <PaletListe />
+  <div id="app">
+    <!-- Dinamik olarak ilgili rota bileşenini yükler -->
+     <Sidebar />
+    <router-view />
   </div>
 </template>
 
 <script>
-import PaletEkle from './components/AddPalet.vue'
-import PaletListe from './components/PaletList.vue'
-
+import Sidebar from './components/Sidebar.vue';
 export default {
+  name: 'App',
   components: {
-    PaletEkle,
-    PaletListe,
+    Sidebar,
   },
-}
+};
 </script>
+
+<style>
+/* Gerekirse uygulama genel stillerini buraya ekleyebilirsiniz */
+</style>

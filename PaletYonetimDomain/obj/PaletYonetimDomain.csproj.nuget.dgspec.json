@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ensar\\Desktop\\Eğitim\\Projeler\\palet-yonetim\\PaletYonetimDomain\\PaletYonetimDomain.csproj": {}
+    "C:\\Users\\ensar\\Desktop\\Eğitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimDomain\\PaletYonetimDomain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ensar\\Desktop\\Eğitim\\Projeler\\palet-yonetim\\PaletYonetimDomain\\PaletYonetimDomain.csproj": {
+    "C:\\Users\\ensar\\Desktop\\Eğitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimDomain\\PaletYonetimDomain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ensar\\Desktop\\Eğitim\\Projeler\\palet-yonetim\\PaletYonetimDomain\\PaletYonetimDomain.csproj",
+        "projectUniqueName": "C:\\Users\\ensar\\Desktop\\Eğitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimDomain\\PaletYonetimDomain.csproj",
         "projectName": "PaletYonetimDomain",
-        "projectPath": "C:\\Users\\ensar\\Desktop\\Eğitim\\Projeler\\palet-yonetim\\PaletYonetimDomain\\PaletYonetimDomain.csproj",
+        "projectPath": "C:\\Users\\ensar\\Desktop\\Eğitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimDomain\\PaletYonetimDomain.csproj",
         "packagesPath": "C:\\Users\\ensar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ensar\\Desktop\\Eğitim\\Projeler\\palet-yonetim\\PaletYonetimDomain\\obj\\",
+        "outputPath": "C:\\Users\\ensar\\Desktop\\Eğitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimDomain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ensar\\AppData\\Roaming\\NuGet\\NuGet.Config",

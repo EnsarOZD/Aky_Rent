@@ -1,26 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\",
+  "WorkspaceRootPath": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{77AF950A-DEE1-400B-8279-C9C3A79F6272}|PaletYonetimAPI\\PaletYonetimAPI.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\paletyonetimapi\\controllers\\paletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F681AE1C-E52C-4DFA-9D03-4C83DBB2CD75}|PaletYonetimDomain\\PaletYonetimDomain.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimdomain\\entities\\paletentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F681AE1C-E52C-4DFA-9D03-4C83DBB2CD75}|PaletYonetimDomain\\PaletYonetimDomain.csproj|solutionrelative:paletyonetimdomain\\entities\\paletentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F681AE1C-E52C-4DFA-9D03-4C83DBB2CD75}|PaletYonetimDomain\\PaletYonetimDomain.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimdomain\\entities\\customerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F681AE1C-E52C-4DFA-9D03-4C83DBB2CD75}|PaletYonetimDomain\\PaletYonetimDomain.csproj|solutionrelative:paletyonetimdomain\\entities\\customerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77AF950A-DEE1-400B-8279-C9C3A79F6272}|PaletYonetimAPI\\PaletYonetimAPI.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77AF950A-DEE1-400B-8279-C9C3A79F6272}|PaletYonetimAPI\\PaletYonetimAPI.csproj|solutionrelative:paletyonetimapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77AF950A-DEE1-400B-8279-C9C3A79F6272}|PaletYonetimAPI\\PaletYonetimAPI.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimapi\\controllers\\paletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77AF950A-DEE1-400B-8279-C9C3A79F6272}|PaletYonetimAPI\\PaletYonetimAPI.csproj|solutionrelative:paletyonetimapi\\controllers\\paletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77AF950A-DEE1-400B-8279-C9C3A79F6272}|PaletYonetimAPI\\PaletYonetimAPI.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\paletyonetimapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{77AF950A-DEE1-400B-8279-C9C3A79F6272}|PaletYonetimAPI\\PaletYonetimAPI.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77AF950A-DEE1-400B-8279-C9C3A79F6272}|PaletYonetimAPI\\PaletYonetimAPI.csproj|solutionrelative:paletyonetimapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DC36C14-1137-4CC5-986E-2E07E0D23DB6}|PaletYonetimInfrastructure\\PaletYonetimInfrastructure.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\paletyonetiminfrastructure\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DC36C14-1137-4CC5-986E-2E07E0D23DB6}|PaletYonetimInfrastructure\\PaletYonetimInfrastructure.csproj|solutionrelative:paletyonetiminfrastructure\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77AF950A-DEE1-400B-8279-C9C3A79F6272}|PaletYonetimAPI\\PaletYonetimAPI.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\paletyonetimapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{77AF950A-DEE1-400B-8279-C9C3A79F6272}|PaletYonetimAPI\\PaletYonetimAPI.csproj|solutionrelative:paletyonetimapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77AF950A-DEE1-400B-8279-C9C3A79F6272}|PaletYonetimAPI\\PaletYonetimAPI.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\paletyonetimapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{77AF950A-DEE1-400B-8279-C9C3A79F6272}|PaletYonetimAPI\\PaletYonetimAPI.csproj|solutionrelative:paletyonetimapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,65 +46,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\PaletYonetimAPI\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "PaletYonetimAPI\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\PaletYonetimAPI\\Properties\\launchSettings.json",
-              "RelativeToolTip": "PaletYonetimAPI\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-13T19:19:15.691Z",
+              "DocumentIndex": 2,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimAPI\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "PaletYonetimAPI\\Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimAPI\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "PaletYonetimAPI\\Controllers\\CustomerController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwAsAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T18:53:26.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomerEntity.cs",
+              "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimDomain\\Entities\\CustomerEntity.cs",
+              "RelativeDocumentMoniker": "PaletYonetimDomain\\Entities\\CustomerEntity.cs",
+              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimDomain\\Entities\\CustomerEntity.cs",
+              "RelativeToolTip": "PaletYonetimDomain\\Entities\\CustomerEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T18:43:59.666Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PaletEntity.cs",
+              "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimDomain\\Entities\\PaletEntity.cs",
+              "RelativeDocumentMoniker": "PaletYonetimDomain\\Entities\\PaletEntity.cs",
+              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimDomain\\Entities\\PaletEntity.cs",
+              "RelativeToolTip": "PaletYonetimDomain\\Entities\\PaletEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAswAgAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T18:28:59.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "PaletController.cs",
-              "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\PaletYonetimAPI\\Controllers\\PaletController.cs",
+              "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimAPI\\Controllers\\PaletController.cs",
               "RelativeDocumentMoniker": "PaletYonetimAPI\\Controllers\\PaletController.cs",
-              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\PaletYonetimAPI\\Controllers\\PaletController.cs",
+              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimAPI\\Controllers\\PaletController.cs",
               "RelativeToolTip": "PaletYonetimAPI\\Controllers\\PaletController.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBwAAAAAAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwB8AAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-11T20:17:03.409Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SeedData.cs",
-              "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\PaletYonetimInfrastructure\\Data\\SeedData.cs",
-              "RelativeDocumentMoniker": "PaletYonetimInfrastructure\\Data\\SeedData.cs",
-              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\PaletYonetimInfrastructure\\Data\\SeedData.cs",
-              "RelativeToolTip": "PaletYonetimInfrastructure\\Data\\SeedData.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAQwDMAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T20:02:44.211Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\PaletYonetimAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "PaletYonetimAPI\\appsettings.json",
-              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\PaletYonetimAPI\\appsettings.json",
-              "RelativeToolTip": "PaletYonetimAPI\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-11T19:55:07.086Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\PaletYonetimAPI\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimAPI\\Program.cs",
               "RelativeDocumentMoniker": "PaletYonetimAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\PaletYonetimAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimAPI\\Program.cs",
               "RelativeToolTip": "PaletYonetimAPI\\Program.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABEAAAACAAAA",
+              "ViewState": "AQIAADkAAAAAAAAAAAAQwEkAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-11T19:52:05.507Z",
               "EditorCaption": ""

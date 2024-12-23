@@ -20,4 +20,7 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+  define: {
+    'process.env': {}, // Node.js olmayan ortamlarda process.env hatasını önler
+  },
 })

@@ -9,3 +9,15 @@ C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\PaletYonetimDomain\obj\Deb
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\PaletYonetimDomain\obj\Debug\net8.0\refint\PaletYonetimDomain.dll
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\PaletYonetimDomain\obj\Debug\net8.0\PaletYonetimDomain.pdb
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\PaletYonetimDomain\obj\Debug\net8.0\ref\PaletYonetimDomain.dll
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimDomain\bin\Debug\net8.0\PaletYonetimDomain.deps.json
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimDomain\bin\Debug\net8.0\PaletYonetimDomain.dll
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimDomain\bin\Debug\net8.0\PaletYonetimDomain.pdb
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimDomain\obj\Debug\net8.0\PaletYonetimDomain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimDomain\obj\Debug\net8.0\PaletYonetimDomain.AssemblyInfoInputs.cache
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimDomain\obj\Debug\net8.0\PaletYonetimDomain.AssemblyInfo.cs
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimDomain\obj\Debug\net8.0\PaletYonetimDomain.csproj.CoreCompileInputs.cache
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimDomain\obj\Debug\net8.0\PaletYonetimDomain.sourcelink.json
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimDomain\obj\Debug\net8.0\PaletYonetimDomain.dll
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimDomain\obj\Debug\net8.0\refint\PaletYonetimDomain.dll
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimDomain\obj\Debug\net8.0\PaletYonetimDomain.pdb
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimDomain\obj\Debug\net8.0\ref\PaletYonetimDomain.dll

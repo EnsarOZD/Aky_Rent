@@ -16,7 +16,7 @@
         <tr v-for="palet in paletler" :key="palet.id">
           <td>{{ palet.id }}</td>
           <td>{{ palet.paletNo }}</td>
-          <td>{{ palet.address }}</td>
+          <td>{{ palet.addres }}</td>
           <td>{{ palet.situation }}</td>
           <td>{{ palet.enteryDate }}</td>
           <td>{{ palet.exitDate || 'N/A' }}</td>
@@ -37,7 +37,12 @@ export default {
     }
   },
   async created() {
-    try {
+    this.fetchPaletList();
+    
+  },
+  methods: {
+    async fetchPaletList() {
+      try {
       const response = await axios.get('http://localhost:6001/api/palet/list')
       this.paletler=response.data
       
@@ -47,7 +52,8 @@ export default {
         'Palet listesi yüklenirken bir hata oluştu.Detay: ' + error.response?.data || error.message,
       )
     }
-  },
+    },
+  }
   // mounted() {
   //   this.created() // Bileşen yüklendiğinde API'yi çağır
   // },

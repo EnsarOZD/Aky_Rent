@@ -3297,11 +3297,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ensar\\Desktop\\Eğitim\\Projeler\\palet-yonetim\\PaletYonetimAPI\\PaletYonetimAPI.csproj",
+      "projectUniqueName": "C:\\Users\\ensar\\Desktop\\Eğitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimAPI\\PaletYonetimAPI.csproj",
       "projectName": "PaletYonetimAPI",
-      "projectPath": "C:\\Users\\ensar\\Desktop\\Eğitim\\Projeler\\palet-yonetim\\PaletYonetimAPI\\PaletYonetimAPI.csproj",
+      "projectPath": "C:\\Users\\ensar\\Desktop\\Eğitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimAPI\\PaletYonetimAPI.csproj",
       "packagesPath": "C:\\Users\\ensar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ensar\\Desktop\\Eğitim\\Projeler\\palet-yonetim\\PaletYonetimAPI\\obj\\",
+      "outputPath": "C:\\Users\\ensar\\Desktop\\Eğitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ensar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3318,8 +3318,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\ensar\\Desktop\\Eğitim\\Projeler\\palet-yonetim\\PaletYonetimInfrastructure\\PaletYonetimInfrastructure.csproj": {
-              "projectPath": "C:\\Users\\ensar\\Desktop\\Eğitim\\Projeler\\palet-yonetim\\PaletYonetimInfrastructure\\PaletYonetimInfrastructure.csproj"
+            "C:\\Users\\ensar\\Desktop\\Eğitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimInfrastructure\\PaletYonetimInfrastructure.csproj": {
+              "projectPath": "C:\\Users\\ensar\\Desktop\\Eğitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimInfrastructure\\PaletYonetimInfrastructure.csproj"
             }
           }
         }

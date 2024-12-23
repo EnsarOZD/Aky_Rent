@@ -17,6 +17,14 @@ namespace PaletYonetimAPI.Controllers
 		[HttpPost("Add")]
 		public IActionResult Add([FromBody] PaletEntity palet)
 		{
+			if (palet.CustomerId==0)
+			{
+				return BadRequest("Müşteri ID'si gerekli.");
+			}
+			if (palet==null)
+			{
+				return BadRequest("Gönderilen palet bilgisi geçersiz.");
+			}
 			try
 			{
 				_context.Palets.Add(palet);
@@ -26,7 +34,7 @@ namespace PaletYonetimAPI.Controllers
 			}
 			catch (Exception ex)
 			{
-
+				Console.WriteLine(ex.Message);
 				return StatusCode(500, new { nessage = "Palet eklenirken hata olşutu.", error = ex.Message });
 			}
 
