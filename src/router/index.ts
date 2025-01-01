@@ -1,29 +1,29 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import MainLayout from '@/layouts/MainLayout.vue'; // Ortak Layout bileşeni
-import HomePage from '@/views/HomeView.vue'; // Ana sayfa bileşeni
-import Palet from '@/views/PaletView.vue'; // Palet bileşeni
+import PaletView from '@/views/PaletView.vue'; // Palet bileşeni
+import AboutView from '@/views/AboutView.vue';
+import CustomerView from '@/views/CustomerView.vue';
+import RackAddressesViewVue from '@/views/RackAddressesView.vue';
 
 const routes = [
   {
-    path: '/', // Ana rota
-    component: MainLayout, // Ortak layout
-    children: [
-      {
-        path: '', // Ana sayfa
-        name: 'Home',
-        component: HomePage,
-      },
-      {
-        path: 'home', // Ana sayfa için alias
-        name: 'HomeAlias',
-        component: HomePage,
-      },
-      {
-        path: 'palet', // Palet sayfası
-        name: 'Palet',
-        component: Palet,
-      },
-    ],
+    path: '/palet',
+    name: 'Palet',
+    component: PaletView,
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: AboutView,
+  },
+  {
+    path: '/customer',
+    name: 'Customer',
+    component: CustomerView,
+  },
+  {
+    path: '/rackAddress',
+    name: 'RackAddress',
+    component: RackAddressesViewVue,
   },
 ];
 

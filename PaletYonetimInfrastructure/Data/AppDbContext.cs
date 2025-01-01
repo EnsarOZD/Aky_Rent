@@ -13,6 +13,7 @@ namespace PaletYonetimInfrastructure.Data
 
 		public DbSet<PaletEntity> Palets { get; set; }
 		public DbSet<CustomerEntity> Customers { get; set; }
+		public DbSet<RackAddressEntity> RackAddress { get; set; }
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
@@ -24,6 +25,16 @@ namespace PaletYonetimInfrastructure.Data
 				.HasOne(p => p.Customer)
 				.WithMany(c => c.Palets)
 				.HasForeignKey(p => p.CustomerId);
+			// RackAddress için gerekli ek yapılandırmalar
+			modelBuilder.Entity<RackAddressEntity>()
+				.Property(r => r.CorridorSide)
+				.HasMaxLength(1); // K/G için uzunluk sınırı
+
+			modelBuilder.Entity<RackAddressEntity>()
+				.HasOne(r => r.Palet)
+				.WithMany()
+				.HasForeignKey(r => r.PaletId)
+				.OnDelete(DeleteBehavior.SetNull);
 		}
 
 	}

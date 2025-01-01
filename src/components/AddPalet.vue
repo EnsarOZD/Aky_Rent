@@ -1,83 +1,74 @@
 <template>
-  <div>
-    <h2>Add Palet</h2>
-    <form @submit.prevent="submitForm">
-      <div>
-        <label for="paletNo">Palet Numarası:</label>
-        <input v-model="paletNo" id="paletNo" required />
+  <div class="add-palet">
+    <form @submit.prevent="handleSubmit" class="form">
+      <div class="form-group">
+        <label for="paletNo" class="label">Palet Numarası</label>
+        <input
+          v-model="formData.paletNo"
+          type="text"
+          id="paletNo"
+          class="input"
+          placeholder="Palet Numarası Girin"
+        />
       </div>
-      <div>
-        <label for="addres">Adres:</label>
-        <input v-model="addres" id="address" required />
-      </div>
-      <div>
-        <label for="Situation">Durum:</label>
-        <select v-model="situation" id="situation" required>
-          <option value="Depoda">Depoda</option>
-          <option value="Kirada">Kirada</option>
-          <option value="Hasarlı">Hasarlı</option>
+      <div class="form-group">
+        <label for="rackAddressId" class="label">Raf Adresi</label>
+        <select
+          v-model="formData.rackAddressId"
+          id="rackAddressId"
+          class="input"
+        >
+          <option v-for="address in availableAddresses" :key="address.id" :value="address.id">
+            Koridor: {{ address.corridorNumber }} - {{ address.corridorSide }},
+            Sıra: {{ address.rowNumber }}, Kat: {{ address.level }}
+          </option>
         </select>
       </div>
-      <div>
-  <label for="customerId">Müşteri:</label>
-  <select v-model="customerId" id="customerId" required>
-    <option v-for="customer in customers" :key="customer.id" :value="customer.id">
-      {{ customer.name }}
-    </option>
-  </select>
-</div>
-      <button type="submit">Palet Ekle</button>
+      <button type="submit" class="button">Kaydet</button>
     </form>
   </div>
 </template>
 
 <script>
-import axios from 'axios'
+import axios from 'axios';
 
 export default {
   data() {
     return {
-      paletNo: '',
-      addres: '',
-      situation: 'Depoda',
-      customerId: '',
-      customers: [],
-    }
-  },
-  mounted() {
-    this.fetchCustomers()
+      formData: {
+        paletNo: '',
+        rackAddressId: '', // Seçilen raf adresi
+      },
+      availableAddresses: [], // Kullanılabilir adresler
+    };
   },
   methods: {
-    async fetchCustomers() {
+    async fetchAvailableAddresses() {
       try {
-        const response = await axios.get('http://localhost:6001/api/customer/list')
-        this.customers = response.data
+        const response = await axios.get('http://localhost:6001/api/rackAddress/list');
+        this.availableAddresses = response.data.filter(
+          (address) => !address.palletId // Sadece boş adresler
+        );
       } catch (error) {
-        console.log('Müşteri listesi alınırken hata oluştu:', error)
+        console.error('Raf adresleri alınırken hata oluştu:', error);
       }
     },
-    async submitForm() {
+    async handleSubmit() {
       try {
-        console.log({
-        paletNo: this.paletNo,
-        addres: this.addres,
-        situation: this.situation,
-        customerId: this.customerId,
-        entyDate: new Date(),
-      })
-        const response = await axios.post('http://localhost:6001/api/palet/add', {
-          paletNo: this.paletNo,
-          addres: this.addres,
-          situation: this.situation,
-          entyDate: new Date(),
-          customerId: this.customerId
-        })
-        alert(response.data.message)
+        await axios.post('http://localhost:6001/api/palet/add', this.formData);
+        alert('Palet başarıyla eklendi!');
+        this.$emit('refresh'); // Listeyi yenile
       } catch (error) {
-        console.log(error)
-        alert('Palet Ekleme İşlemi Başarısız')
+        console.error('Palet kaydedilirken hata oluştu:', error);
       }
     },
   },
-}
+  mounted() {
+    this.fetchAvailableAddresses();
+  },
+};
 </script>
+
+<style scoped>
+/* Stil buraya */
+</style>
