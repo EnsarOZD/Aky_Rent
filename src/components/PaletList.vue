@@ -17,8 +17,8 @@
           <td class="border px-4 py-2">{{ palet.paletNo }}</td>
           <td class="border px-4 py-2">{{ palet.address || 'N/A' }}</td>
           <td class="border px-4 py-2">{{ palet.situation }}</td>
-          <td class="border px-4 py-2">{{ palet.enteryDate }}</td>
-          <td class="border px-4 py-2">{{ palet.exitDate || 'N/A' }}</td>
+          <td class="border px-4 py-2">{{ formatDate(palet.enteryDate) }}</td>
+          <td class="border px-4 py-2">{{ formatDate(palet.exitDate) || 'N/A' }}</td>
           <td class="border px-4 py-2">{{ palet.customerName || 'N/A' }}</td>
                     
         </tr>
@@ -53,6 +53,18 @@ export default {
       )
     }
     },
+    formatDate(date) {
+      if(!date|| date==="0001-01-01T00:00:00"){
+        return "N/A";
+      }
+      return new Date(date).toLocaleDateString('tr-TR', {
+        year: 'numeric',
+        month:"2-digit",
+        day:"2-digit",
+        hour:"2-digit",
+        minute:"2-digit"        
+      })
+      }
   }
   // mounted() {
   //   this.created() // Bileşen yüklendiğinde API'yi çağır

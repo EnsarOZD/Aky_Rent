@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{77AF950A-DEE1-400B-8279-C9C3A79F6272}|PaletYonetimAPI\\PaletYonetimAPI.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimapi\\extensions\\paletendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77AF950A-DEE1-400B-8279-C9C3A79F6272}|PaletYonetimAPI\\PaletYonetimAPI.csproj|solutionrelative:paletyonetimapi\\extensions\\paletendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimapplication\\extensions\\paletdtoextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|solutionrelative:paletyonetimapplication\\extensions\\paletdtoextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F681AE1C-E52C-4DFA-9D03-4C83DBB2CD75}|PaletYonetimDomain\\PaletYonetimDomain.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimdomain\\entities\\paletentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F681AE1C-E52C-4DFA-9D03-4C83DBB2CD75}|PaletYonetimDomain\\PaletYonetimDomain.csproj|solutionrelative:paletyonetimdomain\\entities\\paletentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77AF950A-DEE1-400B-8279-C9C3A79F6272}|PaletYonetimAPI\\PaletYonetimAPI.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimapi\\extensions\\paletendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77AF950A-DEE1-400B-8279-C9C3A79F6272}|PaletYonetimAPI\\PaletYonetimAPI.csproj|solutionrelative:paletyonetimapi\\extensions\\paletendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimapplication\\dto\\paletdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|solutionrelative:paletyonetimapplication\\dto\\paletdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DC36C14-1137-4CC5-986E-2E07E0D23DB6}|PaletYonetimInfrastructure\\PaletYonetimInfrastructure.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetiminfrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DC36C14-1137-4CC5-986E-2E07E0D23DB6}|PaletYonetimInfrastructure\\PaletYonetimInfrastructure.csproj|solutionrelative:paletyonetiminfrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{77AF950A-DEE1-400B-8279-C9C3A79F6272}|PaletYonetimAPI\\PaletYonetimAPI.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimapi\\controllers\\paletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77AF950A-DEE1-400B-8279-C9C3A79F6272}|PaletYonetimAPI\\PaletYonetimAPI.csproj|solutionrelative:paletyonetimapi\\controllers\\paletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DC36C14-1137-4CC5-986E-2E07E0D23DB6}|PaletYonetimInfrastructure\\PaletYonetimInfrastructure.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetiminfrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DC36C14-1137-4CC5-986E-2E07E0D23DB6}|PaletYonetimInfrastructure\\PaletYonetimInfrastructure.csproj|solutionrelative:paletyonetiminfrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3DC36C14-1137-4CC5-986E-2E07E0D23DB6}|PaletYonetimInfrastructure\\PaletYonetimInfrastructure.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetiminfrastructure\\paletyonetiminfrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -33,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{77AF950A-DEE1-400B-8279-C9C3A79F6272}|PaletYonetimAPI\\PaletYonetimAPI.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{77AF950A-DEE1-400B-8279-C9C3A79F6272}|PaletYonetimAPI\\PaletYonetimAPI.csproj|solutionrelative:paletyonetimapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F681AE1C-E52C-4DFA-9D03-4C83DBB2CD75}|PaletYonetimDomain\\PaletYonetimDomain.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimdomain\\entities\\paletentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F681AE1C-E52C-4DFA-9D03-4C83DBB2CD75}|PaletYonetimDomain\\PaletYonetimDomain.csproj|solutionrelative:paletyonetimdomain\\entities\\paletentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3DC36C14-1137-4CC5-986E-2E07E0D23DB6}|PaletYonetimInfrastructure\\PaletYonetimInfrastructure.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetiminfrastructure\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,20 +86,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "PaletDTOExtensions.cs",
               "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\Extensions\\PaletDTOExtensions.cs",
               "RelativeDocumentMoniker": "PaletYonetimApplication\\Extensions\\PaletDTOExtensions.cs",
               "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\Extensions\\PaletDTOExtensions.cs*",
               "RelativeToolTip": "PaletYonetimApplication\\Extensions\\PaletDTOExtensions.cs*",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAYwCkAAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-09T19:14:59.852Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "PaletYonetimInfrastructure",
               "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimInfrastructure\\PaletYonetimInfrastructure.csproj",
               "RelativeDocumentMoniker": "PaletYonetimInfrastructure\\PaletYonetimInfrastructure.csproj",
@@ -112,7 +112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimAPI\\appsettings.json",
               "RelativeDocumentMoniker": "PaletYonetimAPI\\appsettings.json",
@@ -124,12 +124,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PaletDto.cs",
               "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\DTO\\PaletDto.cs",
               "RelativeDocumentMoniker": "PaletYonetimApplication\\DTO\\PaletDto.cs",
-              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\DTO\\PaletDto.cs*",
-              "RelativeToolTip": "PaletYonetimApplication\\DTO\\PaletDto.cs*",
+              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\DTO\\PaletDto.cs",
+              "RelativeToolTip": "PaletYonetimApplication\\DTO\\PaletDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-09T12:41:27.867Z",
@@ -156,14 +156,14 @@
               "RelativeDocumentMoniker": "PaletYonetimAPI\\Controllers\\PaletController.cs",
               "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimAPI\\Controllers\\PaletController.cs",
               "RelativeToolTip": "PaletYonetimAPI\\Controllers\\PaletController.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAswEYAAAAaAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwDUAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-09T08:55:38.554Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimInfrastructure\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "PaletYonetimInfrastructure\\Data\\AppDbContext.cs",
@@ -200,15 +200,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "PaletEntity.cs",
               "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimDomain\\Entities\\PaletEntity.cs",
               "RelativeDocumentMoniker": "PaletYonetimDomain\\Entities\\PaletEntity.cs",
               "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimDomain\\Entities\\PaletEntity.cs",
               "RelativeToolTip": "PaletYonetimDomain\\Entities\\PaletEntity.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAUwAYAAAAcAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T09:02:43.371Z"
+              "WhenOpened": "2025-01-09T09:02:43.371Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -248,20 +249,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "PaletEndpoints.cs",
               "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimAPI\\Extensions\\PaletEndpoints.cs",
               "RelativeDocumentMoniker": "PaletYonetimAPI\\Extensions\\PaletEndpoints.cs",
-              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimAPI\\Extensions\\PaletEndpoints.cs*",
-              "RelativeToolTip": "PaletYonetimAPI\\Extensions\\PaletEndpoints.cs*",
-              "ViewState": "AQIAABIAAAAAAAAAAAAqwCkAAAAFAAAA",
+              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimAPI\\Extensions\\PaletEndpoints.cs",
+              "RelativeToolTip": "PaletYonetimAPI\\Extensions\\PaletEndpoints.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwC4AAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-01T19:41:21.058Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimAPI\\Program.cs",
               "RelativeDocumentMoniker": "PaletYonetimAPI\\Program.cs",

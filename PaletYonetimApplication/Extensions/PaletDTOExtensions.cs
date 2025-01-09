@@ -15,7 +15,7 @@ namespace PaletYonetimApplication.Extensions
 			return new PaletDto
 			{
 				PaletNo = palet.PaletNo,
-				Address = $"Koridor: {palet.RackAddress.CorridorNumber}, Kat: {palet.RackAddress.Level}, Sıra: {palet.RackAddress.RowNumber}",
+				Address = $"Koridor: {palet.RackAddress.CorridorNumber},Yön:{palet.RackAddress.CorridorSide}, Sıra: {palet.RackAddress.RowNumber}, Kat: {palet.RackAddress.Level}",
 				AddressId=palet.AddressId,
 				CustomerName = palet.Customer?.Name ?? "Bilinmiyor",
 				CustomerId=palet.CustomerId,

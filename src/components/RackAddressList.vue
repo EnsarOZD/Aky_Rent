@@ -21,7 +21,7 @@
           <td class="border px-4 py-2">{{ address.level }}</td>
           <td class="border px-4 py-2">
             <span
-              v-if="address.palletId"
+              v-if="address.isOccupied"
               class="text-green-600 font-semibold"
             >
               Dolu

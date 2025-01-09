@@ -62,6 +62,7 @@ export default {
         AddressId: '', // Seçilen raf adresi
         Situation: 'Belirtilmedi',
         customerId: '', // Seçilen müşteri
+        entryDate: new Date().toISOString()
       },
       availableAddresses: [], // Kullanılabilir raf adresleri
       customers: [], // Tüm müşteriler
@@ -87,6 +88,7 @@ export default {
       }
     },
     async handleSubmit() {
+      this.formData.entryDate = new Date().toISOString();
       console.log("Gönderilen Veri:", this.formData); 
       try {
         
