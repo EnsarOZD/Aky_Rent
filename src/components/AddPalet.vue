@@ -12,15 +12,37 @@
         />
       </div>
       <div class="form-group">
-        <label for="rackAddressId" class="label">Raf Adresi</label>
+        <label for="Situation" class="label">Palet Durumu</label>
+        <input
+          v-model="formData.Situation"
+          type="text"
+          id="Situation"
+          class="input"
+          placeholder="Palet Durumu Girin"
+        />
+      </div>
+      <div class="form-group">
+        <label for="AddressId" class="label">Raf Adresi</label>
         <select
-          v-model="formData.rackAddressId"
-          id="rackAddressId"
+          v-model="formData.AddressId"
+          id="AddressId"
           class="input"
         >
           <option v-for="address in availableAddresses" :key="address.id" :value="address.id">
             Koridor: {{ address.corridorNumber }} - {{ address.corridorSide }},
             Sıra: {{ address.rowNumber }}, Kat: {{ address.level }}
+          </option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="customerId" class="label">Müşteri</label>
+        <select
+          v-model="formData.customerId"
+          id="customerId"
+          class="input"
+        >
+          <option v-for="customer in customers" :key="customer.id" :value="customer.id">
+            {{ customer.name }} - {{ customer.contactInfo }}
           </option>
         </select>
       </div>
@@ -37,9 +59,12 @@ export default {
     return {
       formData: {
         paletNo: '',
-        rackAddressId: '', // Seçilen raf adresi
+        AddressId: '', // Seçilen raf adresi
+        Situation: 'Belirtilmedi',
+        customerId: '', // Seçilen müşteri
       },
-      availableAddresses: [], // Kullanılabilir adresler
+      availableAddresses: [], // Kullanılabilir raf adresleri
+      customers: [], // Tüm müşteriler
     };
   },
   methods: {
@@ -53,8 +78,18 @@ export default {
         console.error('Raf adresleri alınırken hata oluştu:', error);
       }
     },
-    async handleSubmit() {
+    async fetchCustomers() {
       try {
+        const response = await axios.get('http://localhost:6001/api/customer/list');
+        this.customers = response.data; // Tüm müşterileri alıyoruz
+      } catch (error) {
+        console.error('Müşteriler alınırken hata oluştu:', error);
+      }
+    },
+    async handleSubmit() {
+      console.log("Gönderilen Veri:", this.formData); 
+      try {
+        
         await axios.post('http://localhost:6001/api/palet/add', this.formData);
         alert('Palet başarıyla eklendi!');
         this.$emit('refresh'); // Listeyi yenile
@@ -65,6 +100,7 @@ export default {
   },
   mounted() {
     this.fetchAvailableAddresses();
+    this.fetchCustomers();
   },
 };
 </script>

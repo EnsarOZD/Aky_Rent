@@ -1,25 +1,25 @@
 <template>
-  <div>
-    <h2>Palet List</h2>
-    <table border="1">
+  <div class="palet-list">
+    <h2 class="text-xl font-bold mb-4">Palet List</h2>
+    <table class="table-auto w-full border-collapse border border-gray-300">
       <thead>
-        <tr>
-          <th>ID</th>
-          <th>Palet No</th>
-          <th>Adres</th>
-          <th>Durum</th>
-          <th>Giriş Tarihi</th>
-          <th>Çıkış Tarihi</th>
+        <tr class="bg-gray-200">          
+          <th class="border px-4 py-2">Palet No</th>
+          <th class="border px-4 py-2">Adres</th>
+          <th class="border px-4 py-2">Durum</th>
+          <th class="border px-4 py-2">Giriş Tarihi</th>
+          <th class="border px-4 py-2">Çıkış Tarihi</th>
+          <th class="border px-4 py-2">Müşteri</th>
         </tr>
       </thead>
       <tbody>
-        <tr v-for="palet in paletler" :key="palet.id">
-          <td>{{ palet.id }}</td>
-          <td>{{ palet.paletNo }}</td>
-          <td>{{ palet.addres }}</td>
-          <td>{{ palet.situation }}</td>
-          <td>{{ palet.enteryDate }}</td>
-          <td>{{ palet.exitDate || 'N/A' }}</td>
+        <tr v-for="palet in paletler" :key="palet.id">          
+          <td class="border px-4 py-2">{{ palet.paletNo }}</td>
+          <td class="border px-4 py-2">{{ palet.address || 'N/A' }}</td>
+          <td class="border px-4 py-2">{{ palet.situation }}</td>
+          <td class="border px-4 py-2">{{ palet.enteryDate }}</td>
+          <td class="border px-4 py-2">{{ palet.exitDate || 'N/A' }}</td>
+          <td class="border px-4 py-2">{{ palet.customerName || 'N/A' }}</td>
                     
         </tr>
       </tbody>
@@ -59,3 +59,29 @@ export default {
   // },
 }
 </script>
+<style scoped>
+.table-auto {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.text-green-600 {
+  color: #16a34a; /* Yeşil renk */
+}
+
+.text-red-600 {
+  color: #dc2626; /* Kırmızı renk */
+}
+</style>

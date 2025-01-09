@@ -21,3 +21,7 @@ C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAppli
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimApplication\obj\Debug\net8.0\refint\PaletYonetimApplication.dll
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimApplication\obj\Debug\net8.0\PaletYonetimApplication.pdb
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimApplication\obj\Debug\net8.0\ref\PaletYonetimApplication.dll
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimApplication\bin\Debug\net8.0\PaletYonetimDomain.dll
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimApplication\bin\Debug\net8.0\PaletYonetimDomain.pdb
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimApplication\obj\Debug\net8.0\PaletYonetimApplication.csproj.AssemblyReference.cache
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimApplication\obj\Debug\net8.0\PaletYon.F0C5EA42.Up2Date

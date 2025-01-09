@@ -181,3 +181,5 @@ C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\o
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\obj\Debug\net8.0\PaletYonetimAPI.pdb
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\obj\Debug\net8.0\PaletYonetimAPI.genruntimeconfig.cache
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\obj\Debug\net8.0\ref\PaletYonetimAPI.dll
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\bin\Debug\net8.0\PaletYonetimApplication.dll
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\bin\Debug\net8.0\PaletYonetimApplication.pdb

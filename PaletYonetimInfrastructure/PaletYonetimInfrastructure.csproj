@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\PaletYonetimApplication\PaletYonetimApplication.csproj" />
     <ProjectReference Include="..\PaletYonetimDomain\PaletYonetimDomain.csproj" />
   </ItemGroup>
 

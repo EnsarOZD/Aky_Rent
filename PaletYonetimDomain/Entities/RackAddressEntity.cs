@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PaletYonetimDomain.Entities
+﻿namespace PaletYonetimDomain.Entities
 {
 	public class RackAddressEntity
 	{
@@ -15,7 +9,5 @@ namespace PaletYonetimDomain.Entities
 		public int RowNumber { get; set; } // Sıra numarası (1-63)
 		public int Level { get; set; } // Kat numarası (4-6)
 
-		public int? PaletId { get; set; } // Palet ile ilişki (nullable)
-		public PaletEntity Palet { get; set; } // Navigation property
 	}
 }

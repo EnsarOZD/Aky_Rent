@@ -1,4 +1,7 @@
-﻿using PaletYonetimDomain.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using PaletYonetimApplication.DTO;
+using PaletYonetimApplication.Extensions;
+using PaletYonetimDomain.Entities;
 using PaletYonetimInfrastructure.Data;
 
 namespace PaletYonetimAPI.Extensions
@@ -7,11 +10,16 @@ namespace PaletYonetimAPI.Extensions
 	{
 		public static void MapPaletEndpoit(this WebApplication app)
 		{
-			app.MapGet("/api/palet/list", (AppDbContext context) =>
+			app.MapGet("/api/palet/list",async (AppDbContext context ) =>
 			{
 				try
 				{
-					var palets = context.Palets.ToList();
+					var palets = await context.Palets
+					.Include(p => p.RackAddress)
+					.Include(p => p.Customer)
+					.Select(p => p.ToDTO())
+					.ToListAsync();
+
 					return Results.Ok(palets);
 				}
 				catch (Exception ex)
@@ -22,14 +30,15 @@ namespace PaletYonetimAPI.Extensions
 			.WithName("GetPaletList")
 			.WithOpenApi();
 
-			app.MapPost("/api/palet/add", async (AppDbContext context, PaletEntity palet) =>
+			app.MapPost("/api/palet/add", async (AppDbContext context, PaletDto paletDTO) =>
 			{
 
 				try
 				{
-					context.Palets.Add(palet);
+					var paletEntity = paletDTO.ToEntity(paletDTO.AddressId, paletDTO.CustomerId);
+					context.Palets.Add(paletEntity);
 					await context.SaveChangesAsync();
-					return Results.Ok(new { message = "Palet başarıyla eklendi", palet });
+					return Results.Ok(new { message = "Palet başarıyla eklendi", palet=paletEntity });
 				}
 				catch (Exception ex)
 				{

@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {
       "PaletYonetimApplication/1.0.0": {
+        "dependencies": {
+          "PaletYonetimDomain": "1.0.0"
+        },
         "runtime": {
           "PaletYonetimApplication.dll": {}
+        }
+      },
+      "PaletYonetimDomain/1.0.0": {
+        "runtime": {
+          "PaletYonetimDomain.dll": {}
         }
       }
     }
   },
   "libraries": {
     "PaletYonetimApplication/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PaletYonetimDomain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

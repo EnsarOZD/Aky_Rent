@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "PaletYonetimDomain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/PaletYonetimDomain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PaletYonetimDomain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "PaletYonetimDomain/1.0.0": {
+      "type": "project",
+      "path": "../PaletYonetimDomain/PaletYonetimDomain.csproj",
+      "msbuildProject": "../PaletYonetimDomain/PaletYonetimDomain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "PaletYonetimDomain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\ensar\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ensar\\Desktop\\Eğitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimDomain\\PaletYonetimDomain.csproj": {
+              "projectPath": "C:\\Users\\ensar\\Desktop\\Eğitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimDomain\\PaletYonetimDomain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

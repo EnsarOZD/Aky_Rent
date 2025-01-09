@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using PaletYonetimApplication.DTO;
 using PaletYonetimDomain.Entities;
 
 namespace PaletYonetimInfrastructure.Data
@@ -15,6 +16,7 @@ namespace PaletYonetimInfrastructure.Data
 		public DbSet<CustomerEntity> Customers { get; set; }
 		public DbSet<RackAddressEntity> RackAddress { get; set; }
 
+		
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
 			base.OnModelCreating(modelBuilder);
@@ -24,17 +26,20 @@ namespace PaletYonetimInfrastructure.Data
 			modelBuilder.Entity<PaletEntity>()
 				.HasOne(p => p.Customer)
 				.WithMany(c => c.Palets)
-				.HasForeignKey(p => p.CustomerId);
+				.HasForeignKey(p => p.CustomerId)
+				.OnDelete(DeleteBehavior.Restrict); // Silme davranışı, kaskatlı işlemleri engeller
 			// RackAddress için gerekli ek yapılandırmalar
 			modelBuilder.Entity<RackAddressEntity>()
 				.Property(r => r.CorridorSide)
 				.HasMaxLength(1); // K/G için uzunluk sınırı
 
-			modelBuilder.Entity<RackAddressEntity>()
-				.HasOne(r => r.Palet)
+			modelBuilder.Entity<PaletEntity>()
+				.HasOne(p => p.RackAddress)
 				.WithMany()
-				.HasForeignKey(r => r.PaletId)
-				.OnDelete(DeleteBehavior.SetNull);
+				.HasForeignKey(p => p.AddressId)
+				.OnDelete(DeleteBehavior.Restrict);
+
+
 		}
 
 	}

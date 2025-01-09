@@ -29,3 +29,5 @@ C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimInfra
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimInfrastructure\obj\Debug\net8.0\refint\PaletYonetimInfrastructure.dll
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimInfrastructure\obj\Debug\net8.0\PaletYonetimInfrastructure.pdb
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimInfrastructure\obj\Debug\net8.0\ref\PaletYonetimInfrastructure.dll
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimInfrastructure\bin\Debug\net8.0\PaletYonetimApplication.dll
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimInfrastructure\bin\Debug\net8.0\PaletYonetimApplication.pdb

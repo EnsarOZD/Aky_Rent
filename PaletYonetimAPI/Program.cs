@@ -27,6 +27,10 @@ builder.Services.AddCors(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Varsayýlan loglama ayarlarýný kontrol et
+builder.Logging.ClearProviders(); // Eski log saðlayýcýlarý temizle
+builder.Logging.AddConsole();    // Konsol loglama ekle
+
 var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
@@ -35,8 +39,8 @@ using (var scope = app.Services.CreateScope())
 
 	if (app.Environment.IsDevelopment())
 	{
-		context.Database.EnsureDeleted();
-		context.Database.EnsureCreated();
+		//context.Database.EnsureDeleted();
+		//context.Database.EnsureCreated();
 	}
 	
 
