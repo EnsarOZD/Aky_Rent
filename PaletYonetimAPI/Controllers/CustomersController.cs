@@ -6,10 +6,10 @@ namespace PaletYonetimAPI.Controllers
 {
 	[ApiController]
 	[Route("/api/[controller]")]
-	public class CustomerController : ControllerBase
+	public class CustomersController : ControllerBase
 	{
 		private readonly AppDbContext _context;
-		public CustomerController(AppDbContext context)
+		public CustomersController(AppDbContext context)
 		{
 			_context = context;
 		}

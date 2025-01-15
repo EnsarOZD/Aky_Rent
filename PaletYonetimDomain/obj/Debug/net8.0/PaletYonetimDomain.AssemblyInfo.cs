@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PaletYonetimDomain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+48b5fede1eb1e4038dfec5e473547a76ba46fbe2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ccb111b56d15d6f06de86c1b44c149517730e981")]
 [assembly: System.Reflection.AssemblyProductAttribute("PaletYonetimDomain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PaletYonetimDomain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

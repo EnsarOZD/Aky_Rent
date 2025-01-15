@@ -66,7 +66,7 @@ public static class SeedData
 			if (rackAddresses.Count >= 2 && customers.Count >= 2)
 			{
 				context.Palets.AddRange(
-					new PaletEntity
+					new PalletEntity
 					{
 						PaletNo = "P12345",
 						CustomerId = customers[0].Id, // İlk müşteri
@@ -76,7 +76,7 @@ public static class SeedData
 						
 
 					},
-					new PaletEntity
+					new PalletEntity
 					{
 						PaletNo = "P67890",
 						CustomerId = customers[1].Id, // İkinci müşteri

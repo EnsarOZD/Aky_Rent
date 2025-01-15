@@ -2,15 +2,14 @@
 {
 	public class CustomerEntity
 	{
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string Surname { get; set; }
-        public string PhoneNumber { get; set; }
-        public string Email { get; set; }
-        public string CustomerAddress { get; set; }
+		public int CustomerID { get; set; } // Benzersiz kimlik
+		public string CompanyName { get; set; } // Şirket adı
+		public bool IsActive { get; set; } // Müşteri aktif mi?
 
-        //Navigation Property
+		// Navigation Properties
+		public ICollection<RepresentativeEntity> Representatives { get; set; } // Temsilciler
 
-        public ICollection<PaletEntity> Palets { get; set; }
-    }
+		public ICollection<PalletEntity> Pallets { get; set; } // Müşteriye ait paletler
+
+	}
 }

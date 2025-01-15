@@ -10,7 +10,7 @@ namespace PaletYonetimApplication.Extensions
 {
 	public static class PaletDTOExtensions
 	{
-		public static PaletDto ToDTO(this PaletEntity palet)
+		public static PaletDto ToDTO(this PalletEntity palet)
 		{
 			return new PaletDto
 			{
@@ -25,9 +25,9 @@ namespace PaletYonetimApplication.Extensions
 			};
 		}
 
-		public static PaletEntity ToEntity(this PaletDto dto,int addressId , int customerId)
+		public static PalletEntity ToEntity(this PaletDto dto,int addressId , int customerId)
 		{
-			return new PaletEntity
+			return new PalletEntity
 			{
 				PaletNo = dto.PaletNo,
 				AddressId = addressId,

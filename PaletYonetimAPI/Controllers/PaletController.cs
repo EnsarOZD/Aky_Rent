@@ -19,7 +19,7 @@ namespace PaletYonetimAPI.Controllers
 		}
 
 		[HttpPost("Add")]
-		public IActionResult Add([FromBody] PaletEntity palet)
+		public IActionResult Add([FromBody] PalletEntity palet)
 		{
 			if (palet.CustomerId==0)
 			{
