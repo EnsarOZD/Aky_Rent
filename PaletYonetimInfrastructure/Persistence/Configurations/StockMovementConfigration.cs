@@ -25,17 +25,17 @@ namespace PaletYonetimInfrastructure.Persistence.Configurations
 			builder.HasOne(e => e.Pallet)
 				   .WithMany(p => p.StockMovements)
 				   .HasForeignKey(e => e.PalletID)
-				   .OnDelete(DeleteBehavior.Cascade);
+				   .OnDelete(DeleteBehavior.NoAction);
 
 			builder.HasOne(e => e.Transaction)
 				   .WithMany(t => t.StockMovements)
 				   .HasForeignKey(e => e.TransactionID)
-				   .OnDelete(DeleteBehavior.Cascade);
+				   .OnDelete(DeleteBehavior.NoAction);
 
 			builder.HasOne(e => e.Product)
 				   .WithMany(p => p.StockMovements)
 				   .HasForeignKey(e => e.ProductID)
-				   .OnDelete(DeleteBehavior.Restrict);
+				   .OnDelete(DeleteBehavior.NoAction);
 		}
 	}
 }

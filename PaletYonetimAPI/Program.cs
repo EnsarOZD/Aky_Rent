@@ -1,16 +1,20 @@
+using MediatR;
 using Microsoft.EntityFrameworkCore;
-using PaletYonetimAPI.Extensions;
-using PaletYonetimDomain.Entities;
-using PaletYonetimInfrastructure.Data;
+using PaletYonetimApplication;
+using PaletYonetimInfrastructure;
+using PaletYonetimInfrastructure.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<AppDbContext>(options =>
-	options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services
+	.AddEndpointsApiExplorer()
+	.AddSwaggerGen()
+	.AddInfrastructure(builder.Configuration.GetConnectionString("DefaultConnection"))
+	.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(ApplicationAssemblyMarker).Assembly)) // MediatR'ý doðru bir þekilde yapýlandýrýn
+	.AddControllers();
+
 
 // CORS politikasý ekleniyor
 builder.Services.AddCors(options =>
@@ -23,13 +27,14 @@ builder.Services.AddCors(options =>
 	});
 });
 
-// Swagger/OpenAPI desteði
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+
 
 // Varsayýlan loglama ayarlarýný kontrol et
-builder.Logging.ClearProviders(); // Eski log saðlayýcýlarý temizle
-builder.Logging.AddConsole();    // Konsol loglama ekle
+builder.Logging
+	.ClearProviders() // Eski log saðlayýcýlarý temizle
+	.AddConsole();    // Konsol loglama ekle
+
+
 
 var app = builder.Build();
 
@@ -42,7 +47,7 @@ using (var scope = app.Services.CreateScope())
 		//context.Database.EnsureDeleted();
 		//context.Database.EnsureCreated();
 	}
-	
+
 
 	// Seed Data'yý burada çaðýrýyoruz
 	//SeedData.Initialize(context);
@@ -56,11 +61,9 @@ if (app.Environment.IsDevelopment())
 {
 	app.UseSwagger();
 	app.UseSwaggerUI();
+	app.MapControllers();
 }
 
-// API Endpoint'leri
-app.MapPaletEndpoit();
-app.MapCustoerEndpoint();
-app.MapRackAddressEndpoints();
+
 
 app.Run();

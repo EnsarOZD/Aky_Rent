@@ -1,52 +1,84 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MediatR;
+using Microsoft.AspNetCore.Mvc;
+using PaletYonetimApplication.Features.Customers.Commands;
+using PaletYonetimApplication.Features.Customers.Queries;
 using PaletYonetimDomain.Entities;
-using PaletYonetimInfrastructure.Data;
+using PaletYonetimInfrastructure.Persistence;
 
 namespace PaletYonetimAPI.Controllers
 {
 	[ApiController]
-	[Route("/api/[controller]")]
+	[Route("api/[controller]")]
 	public class CustomersController : ControllerBase
 	{
-		private readonly AppDbContext _context;
-		public CustomersController(AppDbContext context)
+		private readonly IMediator _mediator;
+
+		public CustomersController(IMediator mediator)
 		{
-			_context = context;
+			_mediator = mediator;
 		}
 
-		[HttpPost("Add")]
-		public IActionResult Add([FromBody] CustomerEntity customer)
+		[HttpGet("all")]
+		public async Task<IActionResult> GetAll()
 		{
-			
-			try
-			{
-				_context.Customers.Add(customer);
-				_context.SaveChanges();
-				return Ok(new { message = "Müşteri başarıyla eklendi.", customer });
-
-			}
-			catch (Exception ex)
-			{
-
-				return StatusCode(500, new { nessage = "Müşteri eklenirken hata olşutu.", error = ex.Message });
-			}
-
+			var customers = await _mediator.Send(new GetAllCustomersQuery());
+			return Ok(customers);
 		}
 
-		[HttpGet("List")]
-		public IActionResult List()
+		[HttpGet("{id}")]
+		public async Task<IActionResult> GetById(int id)
 		{
-			try
-			{
-				var customer = _context.Customers.ToList();
-				return Ok(customer);
-			}
-			catch (Exception ex)
-			{
+			var customer = await _mediator.Send(new GetCustomerByIdQuery(id));
 
-				return StatusCode(500, new { message = "Müşterliler listelenirken bir hata oluştu.", error = ex.Message });
+			if (customer==null)
+			{
+				return NotFound();
 			}
 
+			return Ok(customer);
+		}
+		[HttpPost]
+		public async Task<IActionResult> Create([FromBody] CreateCustomerCommand command)
+		{
+			if (command== null)
+			{
+				return BadRequest("Invalid customer data");
+			}
+
+			var customerId = await _mediator.Send(command);
+
+			return CreatedAtAction(nameof(GetById), new { id = customerId }, null);
+		}
+
+		[HttpPut("{id}")]
+		public async Task<IActionResult> Update (int id, [FromBody] UpdateCustomerCommand command)
+		{
+			if (id!=command.CustomerID)
+			{
+				return BadRequest("Customer ID mismatch");
+
+			}
+
+			var result = await _mediator.Send(command);
+
+			if (!result)
+			{
+				return NotFound("Customer not found");
+
+			}
+
+			return NoContent();
+		}
+
+		[HttpDelete("{id}")]
+		public async Task<IActionResult> Delete(int id)
+		{
+			var result = await _mediator.Send(new DeleteCustomerCommand(id));
+
+			if (!result)
+				return NotFound("Customer not found.");
+
+			return NoContent();
 		}
 	}
 }

@@ -94,7 +94,6 @@ C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\o
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\obj\Debug\net8.0\PaletYonetimAPI.AssemblyInfoInputs.cache
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\obj\Debug\net8.0\PaletYonetimAPI.AssemblyInfo.cs
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\obj\Debug\net8.0\PaletYonetimAPI.csproj.CoreCompileInputs.cache
-C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\obj\Debug\net8.0\PaletYonetimAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\obj\Debug\net8.0\PaletYonetimAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\obj\Debug\net8.0\PaletYonetimAPI.sourcelink.json
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\bin\Debug\net8.0\appsettings.Development.json
@@ -106,6 +105,9 @@ C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\b
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\bin\Debug\net8.0\PaletYonetimAPI.pdb
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\bin\Debug\net8.0\MediatR.dll
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\bin\Debug\net8.0\MediatR.Contracts.dll
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\bin\Debug\net8.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
@@ -163,10 +165,13 @@ C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\b
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\bin\Debug\net8.0\PaletYonetimApplication.dll
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\bin\Debug\net8.0\PaletYonetimDomain.dll
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\bin\Debug\net8.0\PaletYonetimInfrastructure.dll
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\bin\Debug\net8.0\PaletYonetimApplication.pdb
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\bin\Debug\net8.0\PaletYonetimInfrastructure.pdb
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\bin\Debug\net8.0\PaletYonetimDomain.pdb
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\obj\Debug\net8.0\PaletYonetimAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\obj\Debug\net8.0\staticwebassets\msbuild.PaletYonetimAPI.Microsoft.AspNetCore.StaticWebAssets.props
@@ -181,5 +186,3 @@ C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\o
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\obj\Debug\net8.0\PaletYonetimAPI.pdb
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\obj\Debug\net8.0\PaletYonetimAPI.genruntimeconfig.cache
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\obj\Debug\net8.0\ref\PaletYonetimAPI.dll
-C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\bin\Debug\net8.0\PaletYonetimApplication.dll
-C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetimAPI\bin\Debug\net8.0\PaletYonetimApplication.pdb
