@@ -86,6 +86,7 @@ Bu proje, paletlerin, müşteri ilişkilerinin ve stok hareketlerinin yönetildi
 ## Sonraki Adımlar
 - Category, Product, Representative, Role, StockMovement, Transaction ve UserEntity için CRUD işlemlerinin tamamlanması.
 - Validation işlemlerinin eklenmesi.
+- Vue.js ile frontend uygulamaları.
 - Daha detaylı loglama ve hata yönetimi.
 
 ---
