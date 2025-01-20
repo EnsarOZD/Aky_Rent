@@ -11,6 +11,8 @@ namespace PaletYonetimApplication.Interfaces
 	public interface IApplicationDbContext
 	{
 		DbSet<CustomerEntity> Customers { get; }
+		DbSet<PalletEntity> Pallets { get; }
+		DbSet<RackEntity> Racks { get; }
 		Task<int> SaveChangesAsync(CancellationToken cancellationToken);
 	}
 }

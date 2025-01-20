@@ -17,8 +17,4 @@
     <ProjectReference Include="..\PaletYonetimDomain\PaletYonetimDomain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Extensions\" />
-  </ItemGroup>
-
 </Project>

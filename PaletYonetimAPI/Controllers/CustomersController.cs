@@ -2,8 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using PaletYonetimApplication.Features.Customers.Commands;
 using PaletYonetimApplication.Features.Customers.Queries;
-using PaletYonetimDomain.Entities;
-using PaletYonetimInfrastructure.Persistence;
 
 namespace PaletYonetimAPI.Controllers
 {
@@ -30,7 +28,7 @@ namespace PaletYonetimAPI.Controllers
 		{
 			var customer = await _mediator.Send(new GetCustomerByIdQuery(id));
 
-			if (customer==null)
+			if (customer == null)
 			{
 				return NotFound();
 			}
@@ -40,7 +38,7 @@ namespace PaletYonetimAPI.Controllers
 		[HttpPost]
 		public async Task<IActionResult> Create([FromBody] CreateCustomerCommand command)
 		{
-			if (command== null)
+			if (command == null)
 			{
 				return BadRequest("Invalid customer data");
 			}
@@ -51,9 +49,9 @@ namespace PaletYonetimAPI.Controllers
 		}
 
 		[HttpPut("{id}")]
-		public async Task<IActionResult> Update (int id, [FromBody] UpdateCustomerCommand command)
+		public async Task<IActionResult> Update(int id, [FromBody] UpdateCustomerCommand command)
 		{
-			if (id!=command.CustomerID)
+			if (id != command.CustomerID)
 			{
 				return BadRequest("Customer ID mismatch");
 
