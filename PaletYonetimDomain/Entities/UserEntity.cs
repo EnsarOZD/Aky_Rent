@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PaletYonetimDomain.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PaletYonetimDomain.Entities
 {
-	public class UserEntity
+	public class UserEntity : BaseEntity
 	{
 		public int UserID { get; set; } // Benzersiz kimlik
 		public string FirstName { get; set; } // Kullanıcının adı

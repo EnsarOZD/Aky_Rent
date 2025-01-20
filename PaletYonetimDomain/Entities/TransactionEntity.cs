@@ -1,4 +1,5 @@
-﻿using PaletYonetimDomain.Enums;
+﻿using PaletYonetimDomain.Common;
+using PaletYonetimDomain.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PaletYonetimDomain.Entities
 {
-	public class TransactionEntity
+	public class TransactionEntity : BaseEntity
 	{
 		public int TransactionID { get; set; } // Benzersiz işlem kimliği
 		public int PalletID { get; set; } // İşlemde yer alan palet

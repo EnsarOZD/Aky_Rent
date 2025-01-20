@@ -1,8 +1,12 @@
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using PaletYonetimApplication;
+using PaletYonetimApplication.Interfaces;
 using PaletYonetimInfrastructure;
+using PaletYonetimInfrastructure.Converters;
 using PaletYonetimInfrastructure.Persistence;
+using PaletYonetimInfrastructure.Services;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +17,16 @@ builder.Services
 	.AddSwaggerGen()
 	.AddInfrastructure(builder.Configuration.GetConnectionString("DefaultConnection"))
 	.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(ApplicationAssemblyMarker).Assembly)) // MediatR'ý doðru bir þekilde yapýlandýrýn
-	.AddControllers();
+	.AddControllers().AddJsonOptions(options =>
+	{
+		// JSON tarih formatýný güncelleme
+		options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()); // Enum için string dönüþtürme
+		options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
+		options.JsonSerializerOptions.WriteIndented = true;
+		options.JsonSerializerOptions.Converters.Add(new DateTimeJsonConverter("dd-MM-yyyy HH:mm"));
+	});
+builder.Services.AddScoped<IPrefixService, PrefixService>();
+
 
 
 // CORS politikasý ekleniyor
@@ -44,13 +57,13 @@ using (var scope = app.Services.CreateScope())
 
 	if (app.Environment.IsDevelopment())
 	{
-		//context.Database.EnsureDeleted();
-		//context.Database.EnsureCreated();
+		context.Database.EnsureDeleted();
+		context.Database.EnsureCreated();
 	}
 
 
-	// Seed Data'yý burada çaðýrýyoruz
-	//SeedData.Initialize(context);
+	//Seed Data'yý burada çaðýrýyoruz
+	await SeedData.InitializeAsync(context);
 }
 
 // Middleware'ler
@@ -61,9 +74,10 @@ if (app.Environment.IsDevelopment())
 {
 	app.UseSwagger();
 	app.UseSwaggerUI();
-	app.MapControllers();
+	
 }
 
+app.MapControllers();
 
 
 app.Run();

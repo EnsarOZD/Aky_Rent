@@ -1,8 +1,9 @@
-﻿using PaletYonetimDomain.Enums;
+﻿using PaletYonetimDomain.Common;
+using PaletYonetimDomain.Enums;
 
 namespace PaletYonetimDomain.Entities
 {
-	public class RackEntity
+	public class RackEntity : BaseEntity
 	{
 		public int RackID { get; set; } // Benzersiz kimlik
 		public int CorridorNumber { get; set; } // Koridor numarası (1-4)

@@ -28,7 +28,9 @@ namespace PaletYonetimApplication.Features.Customers.Handler
 			{
 				CustomerID = customer.CustomerID,
 				CompanyName = customer.CompanyName,
-				IsActive = customer.IsActive
+				IsActive = customer.IsActive,
+				CreatedTime = customer.CreatedTime,
+				UpdatedTime = customer.UpdatedTime
 			};
 		}
 	}

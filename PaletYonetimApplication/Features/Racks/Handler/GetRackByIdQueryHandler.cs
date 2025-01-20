@@ -32,7 +32,9 @@ namespace PaletYonetimApplication.Features.Pallets.Handler
 				RackID=rack.RackID,
 				IsOccupied=rack.IsOccupied,
 				UsageType=rack.UsageType.ToString(),
-				Row=rack.Row
+				Row=rack.Row,
+				CreatedTime = rack.CreatedTime,
+				UpdatedTime = rack.UpdatedTime
 			};
 		}
 	}

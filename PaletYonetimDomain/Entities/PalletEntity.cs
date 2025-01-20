@@ -10,14 +10,15 @@ namespace PaletYonetimDomain.Entities
 		public int? CustomerID { get; set; } // Paletin ait olduğu müşteri (nullable)
 		public PalletStatus Status { get; set; } // Paletin durumu (Boş, Dolu)
 		public int PalletNumber { get; set; } // Benzersiz numara
+		public string PalletName { get; set; }
+		public string Prefix { get; set; }
 
 		// İlişkiler
 		public RackEntity Rack { get; set; } // Rack ile ilişki
 		public CustomerEntity Customer { get; set; } // Customer ile ilişki
 		public ICollection<StockMovementEntity> StockMovements { get; set; } // Stok hareketleri
 		public ICollection<TransactionEntity> Transactions { get; set; } // Paletle ilgili işlemler
-
-		public string PalletName => $"{Prefix}-{PalletNumber:D3}";
+				
 
 	}
 }

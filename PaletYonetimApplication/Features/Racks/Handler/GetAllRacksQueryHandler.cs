@@ -26,7 +26,9 @@ namespace PaletYonetimApplication.Features.Racks.Handler
 					Floor=rack.Floor,
 					Row=rack.Row,
 					IsOccupied=rack.IsOccupied,
-					UsageType=rack.UsageType.ToString()
+					UsageType=rack.UsageType.ToString(),
+					CreatedTime=rack.CreatedTime,
+					UpdatedTime=rack.UpdatedTime
 				})
 				.ToListAsync(cancellationToken);
 

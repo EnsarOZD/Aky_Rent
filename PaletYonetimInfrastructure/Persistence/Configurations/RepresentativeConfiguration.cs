@@ -9,10 +9,11 @@ using System.Threading.Tasks;
 
 namespace PaletYonetimInfrastructure.Persistence.Configurations
 {
-	public class RepresentativeConfiguration : IEntityTypeConfiguration<RepresentativeEntity>
+	public class RepresentativeConfiguration : BaseConfiguration<RepresentativeEntity>
 	{
-		public void Configure(EntityTypeBuilder<RepresentativeEntity> builder)
+		public override void Configure(EntityTypeBuilder<RepresentativeEntity> builder)
 		{
+			base.Configure(builder);
 			// Primary Key
 			builder.HasKey(e => e.RepresentativeID);
 

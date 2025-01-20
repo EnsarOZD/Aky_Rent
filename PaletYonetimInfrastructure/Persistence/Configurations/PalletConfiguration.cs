@@ -9,10 +9,11 @@ using System.Threading.Tasks;
 
 namespace PaletYonetimInfrastructure.Persistence.Configurations
 {
-	public class PalletConfiguration : IEntityTypeConfiguration<PalletEntity>
+	public class PalletConfiguration : BaseConfiguration<PalletEntity>
 	{
-		public void Configure(EntityTypeBuilder<PalletEntity> builder)
+		public override void Configure(EntityTypeBuilder<PalletEntity> builder)
 		{
+			base.Configure(builder);
 			builder.HasKey(e => e.PalletID);
 
 			builder.Property(e => e.Status)

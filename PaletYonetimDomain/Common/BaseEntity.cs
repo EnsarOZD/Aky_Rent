@@ -8,6 +8,8 @@ namespace PaletYonetimDomain.Common
 {
 	public abstract class BaseEntity
 	{
-		public string Prefix { get; set; }
+		public DateTime CreatedTime { get; set; }
+		public DateTime? UpdatedTime { get; set; }
+
 	}
 }

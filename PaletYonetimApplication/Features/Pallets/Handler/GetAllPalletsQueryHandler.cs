@@ -22,8 +22,11 @@ namespace PaletYonetimApplication.Features.Pallets.Handler
 				{
 					CustomerID = pallet.CustomerID,
 					PalletID = pallet.PalletID,
+					PalletName=pallet.PalletName,
 					RackID = pallet.RackID,
-					Status = pallet.Status.ToString()
+					Status = pallet.Status.ToString(),
+					CreatedTime=pallet.CreatedTime,
+					UpdatedTime=pallet.UpdatedTime
 				})
 				.ToListAsync(cancellationToken);
 

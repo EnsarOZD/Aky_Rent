@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PaletYonetimDomain.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PaletYonetimDomain.Entities
 {
-	public class StockMovementEntity
+	public class StockMovementEntity : BaseEntity
 	{
 		public int StockMovementID { get; set; } // Benzersiz kimlik
 		public int PalletID { get; set; } // İlgili palet

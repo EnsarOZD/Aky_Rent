@@ -28,7 +28,9 @@ namespace PaletYonetimApplication.Features.Pallets.Handler
 				PalletID = pallet.PalletID,
 				CustomerID = pallet.CustomerID,
 				RackID = pallet.RackID,
-				Status = pallet.Status.ToString()
+				Status = pallet.Status.ToString(),
+				CreatedTime = pallet.CreatedTime,
+				UpdatedTime = pallet.UpdatedTime
 			};
 		}
 	}

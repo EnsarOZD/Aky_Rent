@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PaletYonetimApplication.Interfaces;
+using PaletYonetimDomain.Common;
 using PaletYonetimDomain.Entities;
 
 namespace PaletYonetimInfrastructure.Persistence
@@ -21,15 +22,45 @@ namespace PaletYonetimInfrastructure.Persistence
         public DbSet<RackEntity> Racks { get; set; }
         public DbSet<CustomerEntity> Customers { get; set; }
         public DbSet<RepresentativeEntity> Representatives { get; set; }
+		public DbSet<ConfigurationSetting> ConfigurationSettings { get; set; }
 
 
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+		protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
 
 
         }
 
-    }
+		// SaveChanges Override
+		public override int SaveChanges()
+		{
+			SetTimestamps();
+			return base.SaveChanges();
+		}
+
+		public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+		{
+			SetTimestamps();
+			return await base.SaveChangesAsync(cancellationToken);
+		}
+
+		// CreatedTime ve UpdatedTime değerlerini ayarla
+		private void SetTimestamps()
+		{
+			foreach (var entry in ChangeTracker.Entries<BaseEntity>())
+			{
+				if (entry.State == EntityState.Added)
+				{
+					entry.Entity.CreatedTime = DateTime.Now;
+				}
+				else if (entry.State == EntityState.Modified)
+				{
+					entry.Entity.UpdatedTime = DateTime.Now;
+				}
+			}
+		}
+
+	}
 }

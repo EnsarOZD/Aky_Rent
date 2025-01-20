@@ -9,10 +9,11 @@ using System.Threading.Tasks;
 
 namespace PaletYonetimInfrastructure.Persistence.Configurations
 {
-	public class TransactionConfiguration : IEntityTypeConfiguration<TransactionEntity>
+	public class TransactionConfiguration : BaseConfiguration<TransactionEntity>
 	{
-		public void Configure(EntityTypeBuilder<TransactionEntity> builder)
+		public override void Configure(EntityTypeBuilder<TransactionEntity> builder)
 		{
+			base.Configure(builder);
 			builder.HasKey(e => e.TransactionID);
 
 			builder.Property(e => e.ActionType)

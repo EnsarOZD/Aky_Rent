@@ -9,10 +9,11 @@ using System.Threading.Tasks;
 
 namespace PaletYonetimInfrastructure.Persistence.Configurations
 {
-	public class RoleConfiguration : IEntityTypeConfiguration<RoleEntity>
+	public class RoleConfiguration : BaseConfiguration<RoleEntity>
 	{
-		public void Configure(EntityTypeBuilder<RoleEntity> builder)
+		public override void Configure(EntityTypeBuilder<RoleEntity> builder)
 		{
+			base.Configure(builder);
 			builder.HasKey(e => e.RoleID);
 
 			builder.Property(e => e.RoleName)

@@ -1,6 +1,8 @@
-﻿namespace PaletYonetimDomain.Entities
+﻿using PaletYonetimDomain.Common;
+
+namespace PaletYonetimDomain.Entities
 {
-	public class CustomerEntity
+	public class CustomerEntity : BaseEntity
 	{
 		public int CustomerID { get; set; } // Benzersiz kimlik
 		public string CompanyName { get; set; } // Şirket adı

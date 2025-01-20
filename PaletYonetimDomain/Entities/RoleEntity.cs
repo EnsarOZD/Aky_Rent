@@ -1,4 +1,5 @@
-﻿using PaletYonetimDomain.Enums;
+﻿using PaletYonetimDomain.Common;
+using PaletYonetimDomain.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PaletYonetimDomain.Entities
 {
-	public class RoleEntity
+	public class RoleEntity : BaseEntity
 	{
 		public int RoleID { get; set; } // Benzersiz kimlik
 		public UserRole RoleName { get; set; } // Rol adı (enum)

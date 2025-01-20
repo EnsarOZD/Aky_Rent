@@ -9,10 +9,11 @@ using System.Threading.Tasks;
 
 namespace PaletYonetimInfrastructure.Persistence.Configurations
 {
-	public class StockMovementConfigration : IEntityTypeConfiguration<StockMovementEntity>
+	public class StockMovementConfigration : BaseConfiguration<StockMovementEntity>
 	{
-		public void Configure(EntityTypeBuilder<StockMovementEntity> builder)
+		public override void Configure(EntityTypeBuilder<StockMovementEntity> builder)
 		{
+			base.Configure(builder);
 			builder.HasKey(e => e.StockMovementID);
 
 			builder.Property(e => e.Note)

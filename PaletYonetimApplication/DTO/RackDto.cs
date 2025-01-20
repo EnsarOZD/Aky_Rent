@@ -11,5 +11,7 @@ namespace PaletYonetimApplication.DTO
 		public int Row { get; set; }
 		public bool IsOccupied { get; set; }
 		public string UsageType { get; set; } // Kiralık veya Stok
+		public DateTime CreatedTime { get; set; }
+		public DateTime? UpdatedTime { get; set; }
 	}
 }

@@ -9,10 +9,11 @@ using System.Threading.Tasks;
 
 namespace PaletYonetimInfrastructure.Persistence.Configurations
 {
-	public class RackConfiguration : IEntityTypeConfiguration<RackEntity>
+	public class RackConfiguration : BaseConfiguration<RackEntity>
 	{
-		public void Configure(EntityTypeBuilder<RackEntity> builder)
+		public override void Configure(EntityTypeBuilder<RackEntity> builder)
 		{
+			base.Configure(builder);
 			// Primary Key
 			builder.HasKey(e => e.RackID);
 

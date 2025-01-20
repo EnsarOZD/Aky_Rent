@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Microsoft.IdentityModel.Tokens;
 using PaletYonetimDomain.Entities;
 using System;
 using System.Collections.Generic;
@@ -9,10 +10,11 @@ using System.Threading.Tasks;
 
 namespace PaletYonetimInfrastructure.Persistence.Configurations
 {
-	public class CategoryConfiguration : IEntityTypeConfiguration<CategoryEntity>
+	public class CategoryConfiguration : BaseConfiguration<CategoryEntity>
 	{
-		public void Configure(EntityTypeBuilder<CategoryEntity> builder)
+		public override void Configure(EntityTypeBuilder<CategoryEntity> builder)
 		{
+			base.Configure(builder);
 			builder.HasKey(e => e.CategoryID);
 
 			builder.Property(e => e.CategoryName)
