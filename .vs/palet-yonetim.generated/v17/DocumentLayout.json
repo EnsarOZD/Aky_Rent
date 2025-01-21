@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimapplication\\dto\\representativedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|solutionrelative:paletyonetimapplication\\dto\\representativedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 211,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -27,19 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RepresentativeDto.cs",
-              "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\DTO\\RepresentativeDto.cs",
-              "RelativeDocumentMoniker": "PaletYonetimApplication\\DTO\\RepresentativeDto.cs",
-              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\DTO\\RepresentativeDto.cs",
-              "RelativeToolTip": "PaletYonetimApplication\\DTO\\RepresentativeDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T20:25:29.02Z",
-              "EditorCaption": ""
             }
           ]
         },

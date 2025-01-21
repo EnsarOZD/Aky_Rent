@@ -22,24 +22,24 @@ namespace PaletYonetimApplication.Features.Products.Handler
 
 		public async Task<ProductDto> Handle(GetProductByIdQuery request, CancellationToken cancellationToken)
 		{
-			var product = await _context.Products.FindAsync(request.ProductID);
+			var entity = await _context.Products.FindAsync(request.ProductID);
 
-			if (product == null)
+			if (entity == null)
 			{
 				return null; 
 			}
 
 			return new ProductDto
 			{
-				ProductID = product.ProductID,
-				Name = product.Name,
-				Barcode = product.Barcode,
-				Description = product.Description,
-				Unit = product.Unit.ToString(),
-				CategoryID = product.CategoryID,
-				CustomerStockCode = product.CustomerStockCode,
-				CreatedTime = product.CreatedTime,
-				UpdatedTime = product.UpdatedTime
+				ProductID = entity.ProductID,
+				Name = entity.Name,
+				Barcode = entity.Barcode,
+				Description = entity.Description,
+				Unit = entity.Unit.ToString(),
+				CategoryID = entity.CategoryID,
+				CustomerStockCode = entity.CustomerStockCode,
+				CreatedTime = entity.CreatedTime,
+				UpdatedTime = entity.UpdatedTime
 			};
 		}
 	}
