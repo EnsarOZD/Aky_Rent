@@ -13,6 +13,7 @@ namespace PaletYonetimApplication.Interfaces
 		DbSet<CustomerEntity> Customers { get; }
 		DbSet<PalletEntity> Pallets { get; }
 		DbSet<RackEntity> Racks { get; }
+		DbSet<CategoryEntity> Categories { get; }
 		DbSet<ConfigurationSetting> ConfigurationSettings { get; }
 		Task<int> SaveChangesAsync(CancellationToken cancellationToken);
 	}
