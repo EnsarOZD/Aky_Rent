@@ -23,21 +23,21 @@ namespace PaletYonetimAPI.Controllers
 		[HttpGet("all")]
 		public async Task<IActionResult> GetAll()
 		{
-			var racks = await _mediator.Send(new GetAllRacksQuery());
-			return Ok(racks);
+			var entities = await _mediator.Send(new GetAllRacksQuery());
+			return Ok(entities);
 		}
 
 		[HttpGet("{id}")]
 		public async Task<IActionResult> GetById(int id)
 		{
-			var rack = await _mediator.Send(new GetRackByIdQuery(id));
+			var entity = await _mediator.Send(new GetRackByIdQuery(id));
 
-			if (rack == null)
+			if (entity == null)
 			{
 				return NotFound();
 			}
 
-			return Ok(rack);
+			return Ok(entity);
 		}
 		[HttpPost]
 		public async Task<IActionResult> Create([FromBody] CreateRackCommand command)
@@ -47,9 +47,9 @@ namespace PaletYonetimAPI.Controllers
 				return BadRequest("Invalid pallet data");
 			}
 
-			var rackId = await _mediator.Send(command);
+			var entityId = await _mediator.Send(command);
 
-			return CreatedAtAction(nameof(GetById), new { id = rackId }, null);
+			return CreatedAtAction(nameof(GetById), new { id = entityId }, null);
 		}
 
 		[HttpPut("{id}")]

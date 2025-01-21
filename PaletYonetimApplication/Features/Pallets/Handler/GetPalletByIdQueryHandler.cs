@@ -26,6 +26,7 @@ namespace PaletYonetimApplication.Features.Pallets.Handler
 			return new PalletDto
 			{
 				PalletID = pallet.PalletID,
+				PalletName = pallet.PalletName,
 				CustomerID = pallet.CustomerID,
 				RackID = pallet.RackID,
 				Status = pallet.Status.ToString(),

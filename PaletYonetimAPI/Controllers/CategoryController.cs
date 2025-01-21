@@ -19,21 +19,21 @@ namespace PaletYonetimAPI.Controllers
 		[HttpGet("all")]
 		public async Task<IActionResult> GetAll()
 		{
-			var categories = await _mediator.Send(new GetAllCategoryQuery());
-			return Ok(categories);
+			var entities = await _mediator.Send(new GetAllCategoryQuery());
+			return Ok(entities);
 		}
 
 		[HttpGet("{id}")]
 		public async Task<IActionResult> GetById(int id)
 		{
-			var category = await _mediator.Send(new GetCategoryByIdQuery(id));
+			var entity = await _mediator.Send(new GetCategoryByIdQuery(id));
 
-			if (category == null)
+			if (entity == null)
 			{
 				return NotFound();
 			}
 
-			return Ok(category);
+			return Ok(entity);
 		}
 		[HttpPost]
 		public async Task<IActionResult> Create([FromBody] CreateCategoryCommand command)
@@ -43,9 +43,9 @@ namespace PaletYonetimAPI.Controllers
 				return BadRequest("Invalid category data");
 			}
 
-			var categoryId = await _mediator.Send(command);
+			var entityId = await _mediator.Send(command);
 
-			return CreatedAtAction(nameof(GetById), new { id = categoryId }, null);
+			return CreatedAtAction(nameof(GetById), new { id = entityId }, null);
 		}
 
 		[HttpPut("{id}")]

@@ -19,21 +19,21 @@ namespace PaletYonetimAPI.Controllers
 		[HttpGet("all")]
 		public async Task<IActionResult> GetAll()
 		{
-			var customers = await _mediator.Send(new GetAllCustomersQuery());
-			return Ok(customers);
+			var entities = await _mediator.Send(new GetAllCustomersQuery());
+			return Ok(entities);
 		}
 
 		[HttpGet("{id}")]
 		public async Task<IActionResult> GetById(int id)
 		{
-			var customer = await _mediator.Send(new GetCustomerByIdQuery(id));
+			var entity = await _mediator.Send(new GetCustomerByIdQuery(id));
 
-			if (customer == null)
+			if (entity == null)
 			{
 				return NotFound();
 			}
 
-			return Ok(customer);
+			return Ok(entity);
 		}
 		[HttpPost]
 		public async Task<IActionResult> Create([FromBody] CreateCustomerCommand command)
@@ -43,9 +43,9 @@ namespace PaletYonetimAPI.Controllers
 				return BadRequest("Invalid customer data");
 			}
 
-			var customerId = await _mediator.Send(command);
+			var entityId = await _mediator.Send(command);
 
-			return CreatedAtAction(nameof(GetById), new { id = customerId }, null);
+			return CreatedAtAction(nameof(GetById), new { id = entityId }, null);
 		}
 
 		[HttpPut("{id}")]

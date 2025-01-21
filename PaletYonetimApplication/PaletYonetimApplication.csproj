@@ -17,4 +17,22 @@
     <ProjectReference Include="..\PaletYonetimDomain\PaletYonetimDomain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\Representatives\Commands\" />
+    <Folder Include="Features\Representatives\Handler\" />
+    <Folder Include="Features\Representatives\Queries\" />
+    <Folder Include="Features\Roles\Commands\" />
+    <Folder Include="Features\Roles\Handler\" />
+    <Folder Include="Features\Roles\Queries\" />
+    <Folder Include="Features\StockMovements\Commands\" />
+    <Folder Include="Features\StockMovements\Handler\" />
+    <Folder Include="Features\StockMovements\Queries\" />
+    <Folder Include="Features\Transactions\Commands\" />
+    <Folder Include="Features\Transactions\Handler\" />
+    <Folder Include="Features\Transactions\Queries\" />
+    <Folder Include="Features\Users\Commands\" />
+    <Folder Include="Features\Users\Handler\" />
+    <Folder Include="Features\Users\Queries\" />
+  </ItemGroup>
+
 </Project>
