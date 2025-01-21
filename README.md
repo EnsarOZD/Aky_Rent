@@ -53,7 +53,7 @@ Bu proje, paletlerin, müşteri ilişkilerinin ve stok hareketlerinin yönetildi
    ```
 5. Swagger arayüzüne erişmek için tarayıcıda şu adresi açın:
    ```
-   http://localhost:5000/swagger
+   http://localhost:6001/swagger
    ```
 
 ---
@@ -86,15 +86,18 @@ Bu proje, paletlerin, müşteri ilişkilerinin ve stok hareketlerinin yönetildi
 ## Sonraki Adımlar
 - Category, Product, Representative, Role, StockMovement, Transaction ve UserEntity için CRUD işlemlerinin tamamlanması.
 - Validation işlemlerinin eklenmesi.
+- Vue.js ile frontend uygulamaları.
 - Daha detaylı loglama ve hata yönetimi.
+  
 
 ---
 
 ## Ekran Görüntüleri
-### Swagger UI
-*(Ekran görüntülerini buraya ekleyebilirsiniz.)*
+### ![image](https://github.com/user-attachments/assets/f8dc13b3-a306-4650-b27e-1e6c46e16e21)
+### ![image](https://github.com/user-attachments/assets/8e122367-8750-48a1-9de3-fe236e5714e7)
+
 
 ---
 
 ## Katkıda Bulunma
-Eğer projeye katkıda bulunmak isterseniz, lütfen bir Pull Request açmadan önce bir Issue oluşturun. Katkılarınızdan memnuniyet duyarız!
+Eğer projeye katkıda bulunmak isterseniz, lütfen bir Pull Request açmadan önce bir Issue oluşturun. Katkılarınızdan memnuniyet duyarım!
