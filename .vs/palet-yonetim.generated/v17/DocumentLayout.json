@@ -3,16 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimapplication\\dto\\roledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|solutionrelative:paletyonetimapplication\\dto\\roledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F681AE1C-E52C-4DFA-9D03-4C83DBB2CD75}|PaletYonetimDomain\\PaletYonetimDomain.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimdomain\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F681AE1C-E52C-4DFA-9D03-4C83DBB2CD75}|PaletYonetimDomain\\PaletYonetimDomain.csproj|solutionrelative:paletyonetimdomain\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimapplication\\features\\roles\\handler\\updaterolecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|solutionrelative:paletyonetimapplication\\features\\roles\\handler\\updaterolecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimapplication\\features\\roles\\handler\\createrolecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|solutionrelative:paletyonetimapplication\\features\\roles\\handler\\createrolecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimapplication\\features\\catergories\\handler\\updatecategorycommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|solutionrelative:paletyonetimapplication\\features\\catergories\\handler\\updatecategorycommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimapplication\\features\\roles\\commands\\createrolecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|solutionrelative:paletyonetimapplication\\features\\roles\\commands\\createrolecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimapplication\\features\\roles\\handler\\getallrolequeryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|solutionrelative:paletyonetimapplication\\features\\roles\\handler\\getallrolequeryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimapplication\\features\\pallets\\commands\\createpalletcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|solutionrelative:paletyonetimapplication\\features\\pallets\\commands\\createpalletcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77AF950A-DEE1-400B-8279-C9C3A79F6272}|PaletYonetimAPI\\PaletYonetimAPI.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimapi\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77AF950A-DEE1-400B-8279-C9C3A79F6272}|PaletYonetimAPI\\PaletYonetimAPI.csproj|solutionrelative:paletyonetimapi\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77AF950A-DEE1-400B-8279-C9C3A79F6272}|PaletYonetimAPI\\PaletYonetimAPI.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77AF950A-DEE1-400B-8279-C9C3A79F6272}|PaletYonetimAPI\\PaletYonetimAPI.csproj|solutionrelative:paletyonetimapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77AF950A-DEE1-400B-8279-C9C3A79F6272}|PaletYonetimAPI\\PaletYonetimAPI.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77AF950A-DEE1-400B-8279-C9C3A79F6272}|PaletYonetimAPI\\PaletYonetimAPI.csproj|solutionrelative:paletyonetimapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimapplication\\features\\users\\handler\\updateusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|solutionrelative:paletyonetimapplication\\features\\users\\handler\\updateusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimapplication\\features\\users\\handler\\getuserbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|solutionrelative:paletyonetimapplication\\features\\users\\handler\\getuserbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimapplication\\features\\users\\handler\\getallusersqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|solutionrelative:paletyonetimapplication\\features\\users\\handler\\getallusersqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimapplication\\features\\users\\handler\\deleteusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|solutionrelative:paletyonetimapplication\\features\\users\\handler\\deleteusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimapplication\\features\\users\\handler\\createusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|solutionrelative:paletyonetimapplication\\features\\users\\handler\\createusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,39 +79,171 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RoleDto.cs",
-              "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\DTO\\RoleDto.cs",
-              "RelativeDocumentMoniker": "PaletYonetimApplication\\DTO\\RoleDto.cs",
-              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\DTO\\RoleDto.cs",
-              "RelativeToolTip": "PaletYonetimApplication\\DTO\\RoleDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimDomain\\Enums\\UserRole.cs",
+              "RelativeDocumentMoniker": "PaletYonetimDomain\\Enums\\UserRole.cs",
+              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimDomain\\Enums\\UserRole.cs",
+              "RelativeToolTip": "PaletYonetimDomain\\Enums\\UserRole.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T09:52:36.404Z",
+              "WhenOpened": "2025-01-22T13:28:13.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GetAllRoleQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\Features\\Roles\\Handler\\GetAllRoleQueryHandler.cs",
+              "RelativeDocumentMoniker": "PaletYonetimApplication\\Features\\Roles\\Handler\\GetAllRoleQueryHandler.cs",
+              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\Features\\Roles\\Handler\\GetAllRoleQueryHandler.cs",
+              "RelativeToolTip": "PaletYonetimApplication\\Features\\Roles\\Handler\\GetAllRoleQueryHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T13:22:41.224Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UpdateRoleCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\Features\\Roles\\Handler\\UpdateRoleCommandHandler.cs",
-              "RelativeDocumentMoniker": "PaletYonetimApplication\\Features\\Roles\\Handler\\UpdateRoleCommandHandler.cs",
-              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\Features\\Roles\\Handler\\UpdateRoleCommandHandler.cs",
-              "RelativeToolTip": "PaletYonetimApplication\\Features\\Roles\\Handler\\UpdateRoleCommandHandler.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAAB0AAAARAAAA",
+              "Title": "CreateRoleCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\Features\\Roles\\Handler\\CreateRoleCommandHandler.cs",
+              "RelativeDocumentMoniker": "PaletYonetimApplication\\Features\\Roles\\Handler\\CreateRoleCommandHandler.cs",
+              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\Features\\Roles\\Handler\\CreateRoleCommandHandler.cs",
+              "RelativeToolTip": "PaletYonetimApplication\\Features\\Roles\\Handler\\CreateRoleCommandHandler.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T09:46:32.708Z"
+              "WhenOpened": "2025-01-22T13:22:11.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreatePalletCommand.cs",
+              "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\Features\\Pallets\\Commands\\CreatePalletCommand.cs",
+              "RelativeDocumentMoniker": "PaletYonetimApplication\\Features\\Pallets\\Commands\\CreatePalletCommand.cs",
+              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\Features\\Pallets\\Commands\\CreatePalletCommand.cs",
+              "RelativeToolTip": "PaletYonetimApplication\\Features\\Pallets\\Commands\\CreatePalletCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T13:21:59.609Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UpdateCategoryCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\Features\\Catergories\\Handler\\UpdateCategoryCommandHandler.cs",
-              "RelativeDocumentMoniker": "PaletYonetimApplication\\Features\\Catergories\\Handler\\UpdateCategoryCommandHandler.cs",
-              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\Features\\Catergories\\Handler\\UpdateCategoryCommandHandler.cs",
-              "RelativeToolTip": "PaletYonetimApplication\\Features\\Catergories\\Handler\\UpdateCategoryCommandHandler.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACgAAAACAAAA",
+              "Title": "CreateRoleCommand.cs",
+              "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\Features\\Roles\\Commands\\CreateRoleCommand.cs",
+              "RelativeDocumentMoniker": "PaletYonetimApplication\\Features\\Roles\\Commands\\CreateRoleCommand.cs",
+              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\Features\\Roles\\Commands\\CreateRoleCommand.cs",
+              "RelativeToolTip": "PaletYonetimApplication\\Features\\Roles\\Commands\\CreateRoleCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T09:46:16.649Z"
+              "WhenOpened": "2025-01-22T13:20:50.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RoleController.cs",
+              "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimAPI\\Controllers\\RoleController.cs",
+              "RelativeDocumentMoniker": "PaletYonetimAPI\\Controllers\\RoleController.cs",
+              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimAPI\\Controllers\\RoleController.cs",
+              "RelativeToolTip": "PaletYonetimAPI\\Controllers\\RoleController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T13:12:18.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimAPI\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "PaletYonetimAPI\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimAPI\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "PaletYonetimAPI\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T13:08:53.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimAPI\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "PaletYonetimAPI\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimAPI\\Controllers\\UserController.cs",
+              "RelativeToolTip": "PaletYonetimAPI\\Controllers\\UserController.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAAAEwAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T13:08:16.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UpdateUserCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\Features\\Users\\Handler\\UpdateUserCommandHandler.cs",
+              "RelativeDocumentMoniker": "PaletYonetimApplication\\Features\\Users\\Handler\\UpdateUserCommandHandler.cs",
+              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\Features\\Users\\Handler\\UpdateUserCommandHandler.cs",
+              "RelativeToolTip": "PaletYonetimApplication\\Features\\Users\\Handler\\UpdateUserCommandHandler.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T12:54:16.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GetUserByIdQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\Features\\Users\\Handler\\GetUserByIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "PaletYonetimApplication\\Features\\Users\\Handler\\GetUserByIdQueryHandler.cs",
+              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\Features\\Users\\Handler\\GetUserByIdQueryHandler.cs",
+              "RelativeToolTip": "PaletYonetimApplication\\Features\\Users\\Handler\\GetUserByIdQueryHandler.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACQAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T12:54:06.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GetAllUsersQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\Features\\Users\\Handler\\GetAllUsersQueryHandler.cs",
+              "RelativeDocumentMoniker": "PaletYonetimApplication\\Features\\Users\\Handler\\GetAllUsersQueryHandler.cs",
+              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\Features\\Users\\Handler\\GetAllUsersQueryHandler.cs",
+              "RelativeToolTip": "PaletYonetimApplication\\Features\\Users\\Handler\\GetAllUsersQueryHandler.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T12:53:56.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DeleteUserCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\Features\\Users\\Handler\\DeleteUserCommandHandler.cs",
+              "RelativeDocumentMoniker": "PaletYonetimApplication\\Features\\Users\\Handler\\DeleteUserCommandHandler.cs",
+              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\Features\\Users\\Handler\\DeleteUserCommandHandler.cs",
+              "RelativeToolTip": "PaletYonetimApplication\\Features\\Users\\Handler\\DeleteUserCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T12:53:49.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CreateUserCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\Features\\Users\\Handler\\CreateUserCommandHandler.cs",
+              "RelativeDocumentMoniker": "PaletYonetimApplication\\Features\\Users\\Handler\\CreateUserCommandHandler.cs",
+              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\Features\\Users\\Handler\\CreateUserCommandHandler.cs",
+              "RelativeToolTip": "PaletYonetimApplication\\Features\\Users\\Handler\\CreateUserCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T12:53:25.576Z",
+              "EditorCaption": ""
             }
           ]
         },

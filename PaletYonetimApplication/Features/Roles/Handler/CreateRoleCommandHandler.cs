@@ -26,9 +26,8 @@ namespace PaletYonetimApplication.Features.Roles.Handler
 
 			var role = new RoleEntity
 			{
-				RoleName = Enum.Parse<UserRole>(request.RoleName),
-				CreatedTime = request.CreatedTime,
-				UpdatedTime = request.UpdatedTime
+				RoleName = Enum.Parse<UserRole>(request.RoleName)
+				
 			};
 
 			_context.Roles.Add(role);

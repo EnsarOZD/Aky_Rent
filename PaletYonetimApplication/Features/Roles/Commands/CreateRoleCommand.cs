@@ -10,8 +10,6 @@ namespace PaletYonetimApplication.Features.Roles.Commands
 	public class CreateRoleCommand : IRequest<int>
 	{
 		public string RoleName { get; set; }
-		public DateTime CreatedTime { get; set; }
-		public DateTime? UpdatedTime { get; set; }
-
+		
 	}
 }
