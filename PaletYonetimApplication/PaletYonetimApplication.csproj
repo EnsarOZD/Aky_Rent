@@ -18,9 +18,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Roles\Commands\" />
-    <Folder Include="Features\Roles\Handler\" />
-    <Folder Include="Features\Roles\Queries\" />
     <Folder Include="Features\StockMovements\Commands\" />
     <Folder Include="Features\StockMovements\Handler\" />
     <Folder Include="Features\StockMovements\Queries\" />

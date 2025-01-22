@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimapplication\\dto\\roledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|solutionrelative:paletyonetimapplication\\dto\\roledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimapplication\\features\\roles\\handler\\updaterolecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|solutionrelative:paletyonetimapplication\\features\\roles\\handler\\updaterolecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|c:\\users\\ensar\\desktop\\e\u011Fitim\\projeler\\palet-yonetim\\aky_rent\\paletyonetimapplication\\features\\catergories\\handler\\updatecategorycommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64BACB7F-C841-45D3-B349-49E3D0FC6899}|PaletYonetimApplication\\PaletYonetimApplication.csproj|solutionrelative:paletyonetimapplication\\features\\catergories\\handler\\updatecategorycommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 211,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +35,43 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RoleDto.cs",
+              "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\DTO\\RoleDto.cs",
+              "RelativeDocumentMoniker": "PaletYonetimApplication\\DTO\\RoleDto.cs",
+              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\DTO\\RoleDto.cs",
+              "RelativeToolTip": "PaletYonetimApplication\\DTO\\RoleDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T09:52:36.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UpdateRoleCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\Features\\Roles\\Handler\\UpdateRoleCommandHandler.cs",
+              "RelativeDocumentMoniker": "PaletYonetimApplication\\Features\\Roles\\Handler\\UpdateRoleCommandHandler.cs",
+              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\Features\\Roles\\Handler\\UpdateRoleCommandHandler.cs",
+              "RelativeToolTip": "PaletYonetimApplication\\Features\\Roles\\Handler\\UpdateRoleCommandHandler.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAAB0AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T09:46:32.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UpdateCategoryCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\Features\\Catergories\\Handler\\UpdateCategoryCommandHandler.cs",
+              "RelativeDocumentMoniker": "PaletYonetimApplication\\Features\\Catergories\\Handler\\UpdateCategoryCommandHandler.cs",
+              "ToolTip": "C:\\Users\\ensar\\Desktop\\E\u011Fitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimApplication\\Features\\Catergories\\Handler\\UpdateCategoryCommandHandler.cs",
+              "RelativeToolTip": "PaletYonetimApplication\\Features\\Catergories\\Handler\\UpdateCategoryCommandHandler.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACgAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T09:46:16.649Z"
             }
           ]
         },
