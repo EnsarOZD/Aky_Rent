@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using PaletYonetimApplication.Features.Pallets.Commands;
 using PaletYonetimApplication.Interfaces;
 using PaletYonetimDomain.Entities;
+using PaletYonetimDomain.Enums;
 
 namespace PaletYonetimApplication.Features.Pallets.Handler
 {
@@ -35,7 +36,7 @@ namespace PaletYonetimApplication.Features.Pallets.Handler
 				PalletNumber = nextPalletNumber,
 				RackID = request.RackID,
 				CustomerID = request.CustomerID,
-				Status = request.Status,
+				Status = Enum.Parse<PalletStatus>(request.Status),
 				PalletName=palletName
 				
 			};

@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "l4WAUOIFrCgO+X0uB+YuQ97eR70MFgQ9jup3cFhy1u6Cpc/REe+W0bWaJPvWNBu1S6sj8+kgEw9ang7yUEytmg==",
+  "dgSpecHash": "otS8v4MHiHT8RmFxy03yR0pc2dUMSQ54T5ulf8jpPN8W4X5h4wpLZ1JfSqXtNQvWwaPJNW+QDlJbf5bADqCniA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ensar\\Desktop\\Eğitim\\Projeler\\palet-yonetim\\Aky_Rent\\PaletYonetimAPI\\PaletYonetimAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ensar\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\ensar\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
+    "C:\\Users\\ensar\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\ensar\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\ensar\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\ensar\\.nuget\\packages\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",
     "C:\\Users\\ensar\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\ensar\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",

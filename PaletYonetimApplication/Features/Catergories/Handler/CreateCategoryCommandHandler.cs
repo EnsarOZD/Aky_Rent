@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using FluentValidation;
+using MediatR;
 using PaletYonetimApplication.Features.Catergories.Commands;
 using PaletYonetimApplication.Interfaces;
 using PaletYonetimDomain.Entities;
@@ -12,18 +13,19 @@ namespace PaletYonetimApplication.Features.Catergories.Handler
 {
 	public class CreateCategoryCommandHandler : IRequestHandler<CreateCategoryCommand, int>
 	{
-		private readonly IApplicationDbContext _context;
+		private readonly IApplicationDbContext _context;		
 
 		public CreateCategoryCommandHandler(IApplicationDbContext context)
 		{
 			_context = context;
+			
 		}
 
 		public async Task<int> Handle(CreateCategoryCommand request, CancellationToken cancellationToken)
-		{
+		{			
 			var category = new CategoryEntity
 			{
-				CategoryName = request.CatergoryName,
+				CategoryName = request.CategoryName,
 				Description = request.Description,				
 			};
 

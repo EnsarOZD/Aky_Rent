@@ -12,6 +12,6 @@ namespace PaletYonetimApplication.Features.Pallets.Commands
 	{
 		public int RackID { get; set; } 
 		public int? CustomerID { get; set; } 
-		public PalletStatus Status { get; set; }
+		public string Status { get; set; }
 	}
 }

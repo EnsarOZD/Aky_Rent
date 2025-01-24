@@ -32,6 +32,7 @@ namespace PaletYonetimApplication.Features.StockMovements.Handler
 			stockMovement.ProductID = request.ProductID;
 			stockMovement.Quantity = request.Quantity;
 			stockMovement.Note = request.Note;
+			
 
 			await _context.SaveChangesAsync(cancellationToken);
 

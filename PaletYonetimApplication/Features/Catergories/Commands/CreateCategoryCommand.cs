@@ -9,7 +9,7 @@ namespace PaletYonetimApplication.Features.Catergories.Commands
 {
 	public class CreateCategoryCommand : IRequest<int>
 	{
-		public string CatergoryName { get; set; }
+		public string CategoryName { get; set; }
 		public string Description { get; set; }		
 	}
 }
