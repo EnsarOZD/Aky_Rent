@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
 using PaletYonetimApplication.DTO;
+using PaletYonetimApplication.Exceptions;
 using PaletYonetimApplication.Features.StockMovements.Queries;
 using PaletYonetimApplication.Interfaces;
 
@@ -21,7 +22,7 @@ namespace PaletYonetimApplication.Features.StockMovements.Handler
 				.FirstOrDefaultAsync(sm => sm.StockMovementID == request.StockMovementID, cancellationToken);
 
 			if (stockMovement == null)
-				return null;
+				throw new NotFoundException($"StockMovemnet with ID {request.StockMovementID} was not found.");
 
 			return new StockMovementDto
 			{

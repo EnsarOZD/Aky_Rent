@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
 using PaletYonetimApplication.DTO;
+using PaletYonetimApplication.Exceptions;
 using PaletYonetimApplication.Features.Transactions.Queries;
 using PaletYonetimApplication.Interfaces;
 using System;
@@ -26,7 +27,7 @@ namespace PaletYonetimApplication.Features.Transactions.Handler
 				.FirstOrDefaultAsync(t => t.TransactionID == request.TransactionID, cancellationToken);
 
 			if (transaction == null)
-				return null;
+				throw new NotFoundException($"Transaction with ID {request.TransactionID} was not found.");
 
 			return new TransactionDto
 			{

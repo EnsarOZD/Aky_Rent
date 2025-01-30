@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using PaletYonetimApplication.Exceptions;
 using PaletYonetimApplication.Features.Racks.Commands;
 using PaletYonetimApplication.Interfaces;
 using PaletYonetimDomain.Enums;
@@ -20,7 +21,7 @@ namespace PaletYonetimApplication.Features.Racks.Handler
 
 			if (rack == null)
 			{
-				return false;
+				throw new NotFoundException($"Rack with ID {request.RackID} was not found.");
 			}
 
 			rack.CorridorNumber = request.CorridorNumber;

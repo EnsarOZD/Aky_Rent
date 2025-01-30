@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using PaletYonetimApplication.DTO;
+using PaletYonetimApplication.Exceptions;
 using PaletYonetimApplication.Features.Catergories.Queries;
 using PaletYonetimApplication.Features.Roles.Queries;
 using PaletYonetimApplication.Interfaces;
@@ -25,7 +26,7 @@ namespace PaletYonetimApplication.Features.Roles.Handler
 			var role = await _context.Roles.FindAsync(request.RoleId);
 
 			if (role == null)
-				return null;
+				throw new NotFoundException($"Role with ID {request.RoleId} was not found.");
 
 			return new RoleDto
 				{

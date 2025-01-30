@@ -1,8 +1,9 @@
 ﻿using MediatR;
+using Microsoft.EntityFrameworkCore;
 using PaletYonetimApplication.DTOs;
+using PaletYonetimApplication.Exceptions;
 using PaletYonetimApplication.Features.Customers.Queries;
 using PaletYonetimApplication.Interfaces;
-using System;
 
 namespace PaletYonetimApplication.Features.Customers.Handler
 {
@@ -17,11 +18,12 @@ namespace PaletYonetimApplication.Features.Customers.Handler
 
 		public async Task<CustomerDto> Handle(GetCustomerByIdQuery request, CancellationToken cancellationToken)
 		{
-			var customer = await _context.Customers.FindAsync(request.CustomerID);
+			var customer = await _context.Customers
+				.FirstOrDefaultAsync(c => c.CustomerID == request.CustomerID, cancellationToken);
 
 			if (customer == null)
 			{
-				return null; // Müşteri bulunamazsa null döner
+				throw new NotFoundException($"Customer with ID {request.CustomerID} was not found.");
 			}
 
 			return new CustomerDto

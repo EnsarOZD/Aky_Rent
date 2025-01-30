@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
+using PaletYonetimApplication.Exceptions;
 using PaletYonetimApplication.Features.Customers.Commands;
 using PaletYonetimApplication.Interfaces;
 using System;
@@ -26,7 +27,7 @@ namespace PaletYonetimApplication.Features.Customers.Handler
 
 			if (customer==null)
 			{
-				return false;
+				throw new NotFoundException($"Customer with ID {request.CustomerID} was not found.");
 			}
 
 			customer.CompanyName = request.CompanyName;

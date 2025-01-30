@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using PaletYonetimApplication.DTO;
+using PaletYonetimApplication.Exceptions;
 using PaletYonetimApplication.Features.Catergories.Commands;
 using PaletYonetimApplication.Features.Roles.Commands;
 using PaletYonetimApplication.Interfaces;
@@ -27,7 +28,7 @@ namespace PaletYonetimApplication.Features.Roles.Handler
 
 			if (role == null)
 			{
-				return false;
+				throw new NotFoundException($"Role with ID {request.RoleID} was not found.");
 			}
 
 			role.RoleID = request.RoleID;

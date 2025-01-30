@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using PaletYonetimApplication.Exceptions;
 using PaletYonetimApplication.Features.Products.Commands;
 using PaletYonetimApplication.Interfaces;
 using PaletYonetimDomain.Enums;
@@ -20,7 +21,7 @@ namespace PaletYonetimApplication.Features.Products.Handler
 
 			if (product == null)
 			{
-				return false;
+				throw new NotFoundException($"Product with ID {request.ProductID} was not found.");
 			}
 
 			product.ProductID = request.ProductID;

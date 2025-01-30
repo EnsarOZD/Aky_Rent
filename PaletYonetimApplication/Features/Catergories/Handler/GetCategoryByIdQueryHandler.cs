@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using PaletYonetimApplication.DTO;
 using PaletYonetimApplication.DTOs;
+using PaletYonetimApplication.Exceptions;
 using PaletYonetimApplication.Features.Catergories.Queries;
 using PaletYonetimApplication.Features.Customers.Queries;
 using PaletYonetimApplication.Interfaces;
@@ -27,7 +28,7 @@ namespace PaletYonetimApplication.Features.Catergories.Handler
 
 			if (category == null)
 			{
-				return null; // Category bulunamazsa null döner
+				throw new NotFoundException($"Category with ID {request.CategoryID} was not found.");
 			}
 
 			return new CategoryDto

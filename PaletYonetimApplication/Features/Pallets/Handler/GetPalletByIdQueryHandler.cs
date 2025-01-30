@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using PaletYonetimApplication.DTO;
+using PaletYonetimApplication.Exceptions;
 using PaletYonetimApplication.Features.Pallets.Queries;
 using PaletYonetimApplication.Interfaces;
 
@@ -20,7 +21,7 @@ namespace PaletYonetimApplication.Features.Pallets.Handler
 
 			if (pallet == null)
 			{
-				return null; // Müşteri bulunamazsa null döner
+				throw new NotFoundException($"Pallets with ID {request.PalletID} was not found.");
 			}
 
 			return new PalletDto

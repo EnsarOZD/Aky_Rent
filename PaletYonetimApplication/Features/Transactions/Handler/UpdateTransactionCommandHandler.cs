@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
+using PaletYonetimApplication.Exceptions;
 using PaletYonetimApplication.Features.Transactions.Commands;
 using PaletYonetimApplication.Interfaces;
 using PaletYonetimDomain.Enums;
@@ -26,7 +27,7 @@ namespace PaletYonetimApplication.Features.Transactions.Handler
 				.FirstOrDefaultAsync(t => t.TransactionID == request.TransactionID, cancellationToken);
 
 			if (transaction == null)
-				return false;
+				throw new NotFoundException($"Transaction with ID {request.TransactionID} was not found.");
 
 			transaction.PalletID = request.PalletID;
 			transaction.ActionType = Enum.Parse<TransactionType>(request.ActionType);

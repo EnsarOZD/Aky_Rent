@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using PaletYonetimApplication.Exceptions;
 using PaletYonetimApplication.Features.Pallets.Commands;
 using PaletYonetimApplication.Features.Racks.Commands;
 using PaletYonetimApplication.Interfaces;
@@ -20,7 +21,7 @@ namespace PaletYonetimApplication.Features.Pallets.Handler
 
 			if (pallet == null)
 			{
-				return false;
+				throw new NotFoundException($"Pallet with ID {request.PalletID} was not found.");
 			}
 
 			pallet.PalletID = request.PalletID;

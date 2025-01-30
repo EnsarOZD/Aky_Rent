@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
 using PaletYonetimApplication.DTO;
+using PaletYonetimApplication.Exceptions;
 using PaletYonetimApplication.Features.Users.Queries;
 using PaletYonetimApplication.Interfaces;
 using System.Diagnostics.Metrics;
@@ -22,7 +23,7 @@ namespace PaletYonetimApplication.Features.Users.Handler
 				.FirstOrDefaultAsync(u => u.UserID == request.UserID, cancellationToken);
 
 			if (user == null)
-				return null;
+				throw new NotFoundException($"User with ID {request.UserID} was not found.");
 
 			return  new UserDto
 			{

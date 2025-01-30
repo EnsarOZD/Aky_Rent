@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using PaletYonetimApplication.Exceptions;
 using PaletYonetimApplication.Features.Catergories.Commands;
 using PaletYonetimApplication.Features.Customers.Commands;
 using PaletYonetimApplication.Interfaces;
@@ -25,7 +26,7 @@ namespace PaletYonetimApplication.Features.Catergories.Handler
 
 			if (category == null)
 			{
-				return false;
+				throw new NotFoundException($"Category with ID {request.CategoryID} was not found.");
 			}
 
 			category.CategoryName = request.CategoryName;

@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using PaletYonetimApplication.Exceptions;
 using PaletYonetimApplication.Features.Customers.Commands;
 using PaletYonetimApplication.Interfaces;
 using System;
@@ -23,7 +24,7 @@ namespace PaletYonetimApplication.Features.Customers.Handler
 			var customer = await _context.Customers.FindAsync(request.CustomerID);
 
 			if (customer == null)
-				return false;
+				throw new NotFoundException($"Customer with ID {request.CustomerID} was not found.");
 
 			_context.Customers.Remove(customer);
 			await _context.SaveChangesAsync(cancellationToken);

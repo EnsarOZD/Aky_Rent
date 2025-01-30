@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using PaletYonetimApplication.DTO;
+using PaletYonetimApplication.Exceptions;
 using PaletYonetimApplication.Features.Pallets.Queries;
 using PaletYonetimApplication.Features.Products.Queries;
 using PaletYonetimApplication.Interfaces;
@@ -26,7 +27,7 @@ namespace PaletYonetimApplication.Features.Products.Handler
 
 			if (entity == null)
 			{
-				return null; 
+				throw new NotFoundException($"Product with ID {request.ProductID} was not found.");
 			}
 
 			return new ProductDto

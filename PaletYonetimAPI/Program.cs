@@ -75,6 +75,7 @@ using (var scope = app.Services.CreateScope())
 // Middleware'ler
 app.UseCors("AllowAll"); // CORS'u etkinleþtir
 app.UseHttpsRedirection();
+app.UseMiddleware<PaletYonetimInfrastructure.Middlewares.GlobalExceptionMiddleware>();
 app.Use(async (context, next) =>
 {
 	try
