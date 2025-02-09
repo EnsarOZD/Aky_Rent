@@ -27,6 +27,7 @@ Bu proje, paletlerin, müşteri ilişkilerinin ve stok hareketlerinin yönetildi
 - **Veritabanı**: SQL Server
 - **Clean Architecture**: Proje, katmanlı mimariye uygun şekilde Domain, Application, Infrastructure ve API katmanlarına ayrılmıştır.
 - **Dokümantasyon**: Swagger kullanılarak API belgeleri oluşturuldu.
+- **Kullanıcı Yönetimi**:ASP.Net Identity
 
 ---
 
@@ -60,7 +61,7 @@ Bu proje, paletlerin, müşteri ilişkilerinin ve stok hareketlerinin yönetildi
 
 ## Şu Ana Kadar Yapılanlar
 ### 1. Entity’ler ve CRUD İşlemleri
-- CustomerEntity, RackEntity, PalletEntity için CRUD işlemleri tamamlandı.
+- Customer, Rack, Pallet, Category, Product, Representative, StockMovement, Transaction entitiyleri için CRUD işlemleri tamamlandı.
 
 ### 2. CQRS Yapısı
 - MediatR kullanılarak komut ve sorgu işlemleri ayrı katmanlar halinde yapılandırıldı.
@@ -78,14 +79,12 @@ Bu proje, paletlerin, müşteri ilişkilerinin ve stok hareketlerinin yönetildi
 ---
 
 ## Şu Anki Durum
-- **Tamamlanan Entity’ler**: Customer, Rack, Pallet
-- **Tamamlanan İşlemler**: CRUD işlemleri, Prefix Yönetimi, Tarih Yönetimi
+- **Tamamlanan Entity’ler**: Customer, Rack, Pallet, Category, Product, Representative, StockMovement, Transaction 
+- **Tamamlanan İşlemler**: CRUD işlemleri, Prefix Yönetimi, Tarih Yönetimi, Validation işlemleri, ASP.Net Identity
 
 ---
 
 ## Sonraki Adımlar
-- Category, Product, Representative, Role, StockMovement, Transaction ve UserEntity için CRUD işlemlerinin tamamlanması.
-- Validation işlemlerinin eklenmesi.
 - Vue.js ile frontend uygulamaları.
 - Daha detaylı loglama ve hata yönetimi.
   
