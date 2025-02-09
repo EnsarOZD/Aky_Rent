@@ -13,6 +13,6 @@ namespace PaletYonetimApplication.Features.Transactions.Commands
 		public int PalletID { get; set; }
 		public string ActionType { get; set; }
 		public DateTime Date { get; set; }
-		public int UserID { get; set; }
+		public string UserID { get; set; }
 	}
 }

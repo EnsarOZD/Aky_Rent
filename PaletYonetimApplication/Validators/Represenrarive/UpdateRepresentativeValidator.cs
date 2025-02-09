@@ -20,8 +20,9 @@ namespace PaletYonetimApplication.Validators.Represenrarive
 				.NotEmpty()
 				.GreaterThan(0);
 
-			RuleFor(r => r.UserID)
-				.GreaterThan(0).When(r => r.UserID.HasValue);
+			RuleFor(x => x.UserID)
+				.NotEmpty()
+				.WithMessage("UserID cannot be empty.");
 
 			RuleFor(r => r.Name)
 				.NotEmpty()

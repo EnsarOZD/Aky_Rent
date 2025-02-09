@@ -1,65 +1,31 @@
 using FluentValidation;
-using FluentValidation.AspNetCore;
-using MediatR;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using PaletYonetimApplication;
-using PaletYonetimApplication.Behaviors;
-using PaletYonetimApplication.Interfaces;
+using PaletYonetimAPI.Extensions;
 using PaletYonetimApplication.Localization;
-using PaletYonetimInfrastructure;
-using PaletYonetimInfrastructure.Converters;
+using PaletYonetimInfrastructure.Identity;
 using PaletYonetimInfrastructure.Persistence;
-using PaletYonetimInfrastructure.Services;
-using System.Text.Json.Serialization;
+using PaletYonetimInfrastructure.Persistence.Seed;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Global FluentValidation dil yöneticisi ayarý
 ValidatorOptions.Global.LanguageManager = new CustomLanguageManager();
-// Add services to the container.
-builder.Services
-	.AddEndpointsApiExplorer()
-	.AddSwaggerGen()
-	.AddInfrastructure(builder.Configuration.GetConnectionString("DefaultConnection"))
-	.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(ApplicationAssemblyMarker).Assembly))
-	.AddControllers()
-	 .AddFluentValidation(config =>
-	 {
-		 config.RegisterValidatorsFromAssemblyContaining<ApplicationAssemblyMarker>();
-	 })
-	.AddJsonOptions(options =>
-	{
-		options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
-		options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
-		options.JsonSerializerOptions.WriteIndented = true;
-		options.JsonSerializerOptions.Converters.Add(new DateTimeJsonConverter("dd-MM-yyyy HH:mm"));
-	});
 
-builder.Services.AddValidatorsFromAssemblyContaining<ApplicationAssemblyMarker>();
-builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
+// Servis kayýtlarýný extension metotlar aracýlýðýyla ekleyelim
+builder.Services.AddCustomServices(builder.Configuration.GetConnectionString("DefaultConnection"));
+builder.Services.AddCustomIdentity();
 
-builder.Services.AddScoped<IPrefixService, PrefixService>();
-
-// CORS politikasý ekleniyor
-builder.Services.AddCors(options =>
-{
-	options.AddPolicy("AllowAll", policy =>
-	{
-		policy.AllowAnyOrigin()
-			  .AllowAnyMethod()
-			  .AllowAnyHeader();
-	});
-});
-
-// Varsayýlan loglama ayarlarýný kontrol et
-builder.Logging
-	.ClearProviders() // Eski log saðlayýcýlarý temizle
-	.AddConsole();    // Konsol loglama ekle
+// Ek loglama ayarlarý
+builder.Logging.ClearProviders().AddConsole();
 
 var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
 {
-	var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+	var services = scope.ServiceProvider;
+
+	var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
 
 	if (app.Environment.IsDevelopment())
 	{
@@ -67,6 +33,13 @@ using (var scope = app.Services.CreateScope())
 		context.Database.EnsureCreated();
 	}
 
+	// RoleSeed çaðrýsý: Roller oluþturuluyor
+	var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+	await RoleSeed.SeedRolesAsync(roleManager);
+
+	// Opsiyonel: Varsayýlan admin kullanýcýsý oluþturuluyor
+	var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
+	await UserSeed.SeedAdminUserAsync(userManager);
 
 	//Seed Data'yý burada çaðýrýyoruz
 	await SeedData.InitializeAsync(context);
@@ -76,6 +49,8 @@ using (var scope = app.Services.CreateScope())
 app.UseCors("AllowAll"); // CORS'u etkinleþtir
 app.UseHttpsRedirection();
 app.UseMiddleware<PaletYonetimInfrastructure.Middlewares.GlobalExceptionMiddleware>();
+
+
 app.Use(async (context, next) =>
 {
 	try

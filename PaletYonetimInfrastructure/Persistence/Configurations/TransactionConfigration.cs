@@ -28,10 +28,7 @@ namespace PaletYonetimInfrastructure.Persistence.Configurations
 				   .HasForeignKey(e => e.PalletID)
 				   .OnDelete(DeleteBehavior.Cascade);
 
-			builder.HasOne(e => e.User)
-				   .WithMany(u => u.Transactions)
-				   .HasForeignKey(e => e.UserID)
-				   .OnDelete(DeleteBehavior.Cascade);
+			
 		}
 	}
 }

@@ -1,13 +1,15 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using PaletYonetimApplication.Interfaces;
 using PaletYonetimDomain.Common;
 using PaletYonetimDomain.Entities;
+using PaletYonetimInfrastructure.Identity;
 
 namespace PaletYonetimInfrastructure.Persistence
 {
-    public class AppDbContext : DbContext, IApplicationDbContext
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>, IApplicationDbContext
 	{
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         { }
 
         //Veritabanı tabloları
@@ -15,9 +17,7 @@ namespace PaletYonetimInfrastructure.Persistence
         public DbSet<StockMovementEntity> StockMovements { get; set; }
         public DbSet<PalletEntity> Pallets { get; set; }
         public DbSet<ProductEntity> Products { get; set; }
-        public DbSet<TransactionEntity> Transactions { get; set; }
-        public DbSet<UserEntity> Users { get; set; }
-        public DbSet<RoleEntity> Roles { get; set; }
+        public DbSet<TransactionEntity> Transactions { get; set; }             
         public DbSet<CategoryEntity> Categories { get; set; }
         public DbSet<RackEntity> Racks { get; set; }
         public DbSet<CustomerEntity> Customers { get; set; }
@@ -28,8 +28,8 @@ namespace PaletYonetimInfrastructure.Persistence
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
-
+			base.OnModelCreating(modelBuilder);
+			modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
 
         }
 
