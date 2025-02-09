@@ -1,7 +1,10 @@
-﻿using MediatR;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using PaletYonetimApplication.Features.Users.Commands;
-using PaletYonetimApplication.Features.Users.Queries;
+using PaletYonetimApplication.DTO;
+using PaletYonetimApplication.Exceptions;
+using PaletYonetimApplication.Interfaces;
+using System.Threading.Tasks;
 
 namespace PaletYonetimAPI.Controllers
 {
@@ -9,70 +12,87 @@ namespace PaletYonetimAPI.Controllers
 	[Route("api/[controller]")]
 	public class UsersController : ControllerBase
 	{
-		private readonly IMediator _mediator;
+		private readonly IUserService _userService;
 
-		public UsersController(IMediator mediator)
+		// Eğer servis katmanını kullanmak istemezseniz, UserManager ve IMapper'ı doğrudan da enjekte edebilirsiniz.
+		public UsersController(IUserService userService)
 		{
-			_mediator = mediator;
+			_userService = userService;
 		}
 
-		// Tüm kullanıcıları getir
-		[HttpGet("all")]
+		// Örnek: Belirli bir kullanıcıyı ID ile getirme
+		[HttpGet("{id}")]
+		/*[Authorize]*/ // Giriş yapmış kullanıcıların erişebilmesi için
+		public async Task<IActionResult> GetUser(string id)
+		{
+			try
+			{
+				var userDto = await _userService.GetUserByIdAsync(id);
+				return Ok(userDto);
+			}
+			catch (NotFoundException ex)
+			{
+				// Kullanıcı bulunamadıysa NotFound (404) döndür
+				return NotFound(new { Message = ex.Message });
+			}
+			catch (Exception ex)
+			{
+				// Diğer hatalar için BadRequest veya InternalServerError dönebilirsiniz
+				return BadRequest(new { Message = ex.Message });
+			}
+		}
+
+		// Örnek: Kullanıcı kayıt işlemi
+		[HttpPost("register")]
+		[AllowAnonymous]
+		public async Task<IActionResult> Register([FromBody] RegisterUserDto registerDto)
+		{
+			try
+			{
+				var userDto = await _userService.RegisterUserAsync(registerDto);
+				return Ok(userDto);
+			}
+			catch (Exception ex)
+			{
+				// Hata detaylarını döndürürken dikkatli olun, hassas bilgi vermemeye özen gösterin.
+				return BadRequest(new { Message = ex.Message });
+			}
+		}
+		
+		[HttpGet]
+		[AllowAnonymous]
 		public async Task<IActionResult> GetAll()
 		{
-			var users = await _mediator.Send(new GetAllUsersQuery());
+			var users = await _userService.GetAllUsersAsync();
 			return Ok(users);
 		}
 
-		// Belirtilen ID'ye sahip kullanıcıyı getir
-		[HttpGet("{id}")]
-		public async Task<IActionResult> GetById(int id)
-		{
-			var user = await _mediator.Send(new GetUserByIdQuery(id));
-
-			if (user == null)
-				return NotFound("User not found.");
-
-			return Ok(user);
-		}
-
-		// Yeni kullanıcı oluştur
-		[HttpPost]
-		public async Task<IActionResult> Create([FromBody] CreateUserCommand command)
-		{
-			if (command == null)
-				return BadRequest("Invalid user data.");
-
-			var userId = await _mediator.Send(command);
-
-			return CreatedAtAction(nameof(GetById), new { id = userId }, null);
-		}
-
-		// Kullanıcı güncelle
 		[HttpPut("{id}")]
-		public async Task<IActionResult> Update(int id, [FromBody] UpdateUserCommand command)
+		public async Task<IActionResult> Update(string id, [FromBody] UpdateUserDto updateDto)
 		{
-			if (id != command.UserID)
-				return BadRequest("User ID mismatch.");
-
-			var result = await _mediator.Send(command);
-
-			if (!result)
-				return NotFound("User not found.");
-
-			return NoContent();
+			try
+			{
+				var updatedUser = await _userService.UpdateUserAsync(id, updateDto);
+				return Ok(updatedUser);
+			}
+			catch (Exception ex)
+			{
+				return BadRequest(new { Message = ex.Message });
+			}
 		}
 
-		// Kullanıcı sil
 		[HttpDelete("{id}")]
-		public async Task<IActionResult> Delete(int id)
+		public async Task<IActionResult> Delete(string id)
 		{
-			var result = await _mediator.Send(new DeleteUserCommand(id));
-
-			if (!result)
-				return NotFound("User not found.");
-
-			return NoContent();
+			try
+			{
+				await _userService.DeleteUserAsync(id);
+				return Ok(new { Message = "Kullanıcı başarıyla silindi." });
+			}
+			catch (Exception ex)
+			{
+				return BadRequest(new { Message = ex.Message });
+			}
 		}
 	}
 }

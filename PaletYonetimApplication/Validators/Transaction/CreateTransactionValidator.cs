@@ -22,11 +22,11 @@ namespace PaletYonetimApplication.Validators.Transaction
 
 			RuleFor(t => t.Date)
 				.NotEmpty() 
-				.LessThanOrEqualTo(DateTime.Now); 
+				.LessThanOrEqualTo(DateTime.Now);
 
-			RuleFor(t => t.UserID)
-				.NotEmpty() 
-				.GreaterThan(0); 
+			RuleFor(x => x.UserID)
+				.NotEmpty()
+				.WithMessage("UserID cannot be empty.");
 		}
     }
 }

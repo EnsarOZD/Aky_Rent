@@ -11,7 +11,7 @@ namespace PaletYonetimInfrastructure.Persistence
 {
 	public class SeedData
 	{
-		public static async Task InitializeAsync(AppDbContext context)
+		public static async Task InitializeAsync(ApplicationDbContext context)
 		{
 			// Eğer veritabanı zaten doluysa seed işlemini yapma
 			if (await context.Customers.AnyAsync() || await context.Racks.AnyAsync())

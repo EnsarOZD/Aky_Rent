@@ -11,7 +11,7 @@ namespace PaletYonetimDomain.Entities
 	{
 		public int RepresentativeID { get; set; } // Benzersiz kimlik
 		public int CustomerID { get; set; } // Müşteri kimliği (FK)
-		public int? UserID { get; set; } // Kullanıcı kimliği (FK, opsiyonel)
+		public string UserID { get; set; } // Kullanıcı kimliği (FK, opsiyonel)
 		public string Name { get; set; } // Temsilci adı
 		public string Phone { get; set; } // Telefon numarası
 		public string Email { get; set; } // E-posta adresi
@@ -19,7 +19,7 @@ namespace PaletYonetimDomain.Entities
 
 		// Navigation Property
 		public CustomerEntity Customer { get; set; } // Müşteri ile ilişki
-		public UserEntity User { get; set; } // Kullanıcı ile ilişki
+		
 
 		// IsPrimary'i değiştirmek için bir metot
 		public void SetAsPrimary()

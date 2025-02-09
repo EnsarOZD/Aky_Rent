@@ -9,11 +9,11 @@ namespace PaletYonetimDomain.Entities
 		public int PalletID { get; set; } // İşlemde yer alan palet
 		public TransactionType ActionType { get; set; } // İşlem türü
 		public DateTime Date { get; set; } // İşlemin tarihi
-		public int UserID { get; set; } // İşlemi yapan kullanıcı
+		public string UserID { get; set; } // İşlemi yapan kullanıcı
 
 		// Navigation Properties
 		public PalletEntity Pallet { get; set; } // Palet ile ilişki
-		public UserEntity User { get; set; } // Kullanıcı ile ilişki
+		
 		public ICollection<StockMovementEntity> StockMovements { get; set; } // Stok hareketleri
 	}
 }

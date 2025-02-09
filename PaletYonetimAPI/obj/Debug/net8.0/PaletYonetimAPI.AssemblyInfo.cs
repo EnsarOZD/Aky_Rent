@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PaletYonetimAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72684e87a92f66492e3beb859764d333ed71553a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dee33795fe7def94f01023edc339c3f7f3d7f18d")]
 [assembly: System.Reflection.AssemblyProductAttribute("PaletYonetimAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PaletYonetimAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

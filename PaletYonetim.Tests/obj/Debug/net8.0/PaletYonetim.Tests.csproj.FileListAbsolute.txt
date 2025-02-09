@@ -177,3 +177,10 @@ C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetim.Test
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetim.Tests\obj\Debug\net8.0\PaletYonetim.Tests.pdb
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetim.Tests\obj\Debug\net8.0\PaletYonetim.Tests.genruntimeconfig.cache
 C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetim.Tests\obj\Debug\net8.0\ref\PaletYonetim.Tests.dll
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetim.Tests\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetim.Tests\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetim.Tests\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetim.Tests\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetim.Tests\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetim.Tests\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\ensar\Desktop\Eğitim\Projeler\palet-yonetim\Aky_Rent\PaletYonetim.Tests\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

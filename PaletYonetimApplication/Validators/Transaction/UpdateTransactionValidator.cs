@@ -28,9 +28,9 @@ namespace PaletYonetimApplication.Validators.Transaction
 				.NotEmpty()
 				.LessThanOrEqualTo(DateTime.Now);
 
-			RuleFor(t => t.UserID)
+			RuleFor(x => x.UserID)
 				.NotEmpty()
-				.GreaterThan(0);
+				.WithMessage("UserID cannot be empty.");
 		}
     }
 }

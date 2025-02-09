@@ -9,10 +9,10 @@ namespace PaletYonetimInfrastructure
 	{
 		public static IServiceCollection AddInfrastructure(this IServiceCollection services, string connectionString)
 		{
-			services.AddDbContext<AppDbContext>(options =>
+			services.AddDbContext<ApplicationDbContext>(options =>
 				options.UseSqlServer(connectionString));
 
-			services.AddScoped<IApplicationDbContext>(provider => provider.GetService<AppDbContext>());
+			services.AddScoped<IApplicationDbContext>(provider => provider.GetService<ApplicationDbContext>());
 
 			return services;
 		}

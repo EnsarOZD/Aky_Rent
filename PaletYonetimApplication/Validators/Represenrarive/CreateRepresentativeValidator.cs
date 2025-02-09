@@ -8,16 +8,17 @@ using System.Threading.Tasks;
 
 namespace PaletYonetimApplication.Validators.Represenrarive
 {
-	public class CreateRepresentativeValidator:AbstractValidator<CreateRepresantiveCommand>
+	public class CreateRepresentativeValidator : AbstractValidator<CreateRepresantiveCommand>
 	{
-        public CreateRepresentativeValidator()
-        {
+		public CreateRepresentativeValidator()
+		{
 			RuleFor(r => r.CustomerID)
 				.NotEmpty()
 				.GreaterThan(0); // CustomerID dolu ve pozitif olmalı
 
-			RuleFor(r => r.UserID)
-				.GreaterThan(0).When(r => r.UserID.HasValue); // Eğer UserID doluysa pozitif olmalı
+			RuleFor(x => x.UserID)
+				.NotEmpty()
+				.WithMessage("UserID cannot be empty.");
 
 			RuleFor(r => r.Name)
 				.NotEmpty()
@@ -32,5 +33,5 @@ namespace PaletYonetimApplication.Validators.Represenrarive
 				.EmailAddress(); // Email adresi geçerli bir formatta olmalı
 
 		}
-    }
+	}
 }
