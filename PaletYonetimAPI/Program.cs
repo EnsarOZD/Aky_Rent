@@ -9,14 +9,14 @@ using PaletYonetimInfrastructure.Persistence.Seed;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Global FluentValidation dil yöneticisi ayarý
+// Global FluentValidation dil yï¿½neticisi ayarï¿½
 ValidatorOptions.Global.LanguageManager = new CustomLanguageManager();
 
-// Servis kayýtlarýný extension metotlar aracýlýðýyla ekleyelim
+// Servis kayï¿½tlarï¿½nï¿½ extension metotlar aracï¿½lï¿½ï¿½ï¿½yla ekleyelim
 builder.Services.AddCustomServices(builder.Configuration.GetConnectionString("DefaultConnection"));
 builder.Services.AddCustomIdentity();
 
-// Ek loglama ayarlarý
+// Ek loglama ayarlarï¿½
 builder.Logging.ClearProviders().AddConsole();
 
 var app = builder.Build();
@@ -27,26 +27,23 @@ using (var scope = app.Services.CreateScope())
 
 	var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
 
-	if (app.Environment.IsDevelopment())
-	{
-		context.Database.EnsureDeleted();
-		context.Database.EnsureCreated();
-	}
+	// Migration'larÄ± uygula
+	context.Database.Migrate();
 
-	// RoleSeed çaðrýsý: Roller oluþturuluyor
+	// RoleSeed ï¿½aï¿½rï¿½sï¿½: Roller oluï¿½turuluyor
 	var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
 	await RoleSeed.SeedRolesAsync(roleManager);
 
-	// Opsiyonel: Varsayýlan admin kullanýcýsý oluþturuluyor
+	// Opsiyonel: Varsayï¿½lan admin kullanï¿½cï¿½sï¿½ oluï¿½turuluyor
 	var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
 	await UserSeed.SeedAdminUserAsync(userManager);
 
-	//Seed Data'yý burada çaðýrýyoruz
+	//Seed Data'yï¿½ burada ï¿½aï¿½ï¿½rï¿½yoruz
 	await SeedData.InitializeAsync(context);
 }
 
 // Middleware'ler
-app.UseCors("AllowAll"); // CORS'u etkinleþtir
+app.UseCors("AllowAll"); // CORS'u etkinleï¿½tir
 app.UseHttpsRedirection();
 app.UseMiddleware<PaletYonetimInfrastructure.Middlewares.GlobalExceptionMiddleware>();
 
@@ -59,7 +56,7 @@ app.Use(async (context, next) =>
 	}
 	catch (FluentValidation.ValidationException ex)
 	{
-		// Validation hatalarýný HTTP yanýtýna ekleyin
+		// Validation hatalarï¿½nï¿½ HTTP yanï¿½tï¿½na ekleyin
 		context.Response.StatusCode = 400; // Bad Request
 		context.Response.Headers.Add("Validation-Errors", string.Join(", ", ex.Errors.Select(e => e.ErrorMessage)));
 

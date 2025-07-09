@@ -20,6 +20,14 @@ namespace PaletYonetimInfrastructure.Persistence.Configurations
 				   .IsRequired()
 				   .HasMaxLength(50);
 
+			builder.Property(e => e.Barcode)
+				   .HasMaxLength(50)
+				   .IsRequired(false);
+
+			builder.Property(e => e.QRCode)
+				   .HasMaxLength(200)
+				   .IsRequired(false);
+
 			builder.HasOne(e => e.Rack)
 				   .WithMany(r => r.Pallets)
 				   .HasForeignKey(e => e.RackID)

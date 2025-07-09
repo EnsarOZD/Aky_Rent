@@ -23,6 +23,10 @@ namespace PaletYonetimApplication.Features.StockMovements.Handler
 		public async Task<List<StockMovementDto>> Handle(GetAllStockMovementsQuery request, CancellationToken cancellationToken)
 		{
 			var stockMovements = await _context.StockMovements
+				.Include(sm => sm.Product)
+				.Include(sm => sm.Pallet)
+				.Include(sm => sm.FromLocation)
+				.Include(sm => sm.ToLocation)
 				.Select(sm => new StockMovementDto
 				{
 					StockMovementID = sm.StockMovementID,
@@ -32,7 +36,20 @@ namespace PaletYonetimApplication.Features.StockMovements.Handler
 					Quantity = sm.Quantity,
 					Date = sm.Date,
 					Note = sm.Note,
-					StockBalanceAfter = sm.StockBalanceAfter
+					StockBalanceAfter = sm.StockBalanceAfter,
+					MovementType = sm.MovementType.ToString(),
+					MovementReason = sm.MovementReason.ToString(),
+					FromLocationID = sm.FromLocationID,
+					ToLocationID = sm.ToLocationID,
+					ApprovedBy = sm.ApprovedBy,
+					ApprovedAt = sm.ApprovedAt,
+					ScannedBarcode = sm.ScannedBarcode,
+					ScannedQRCode = sm.ScannedQRCode,
+					ReferenceNumber = sm.ReferenceNumber,
+					ProductName = sm.Product.Name,
+					PalletName = sm.Pallet.PalletName,
+					FromLocationName = sm.FromLocation != null ? sm.FromLocation.RackName : null,
+					ToLocationName = sm.ToLocation != null ? sm.ToLocation.RackName : null
 				})
 				.ToListAsync(cancellationToken);
 

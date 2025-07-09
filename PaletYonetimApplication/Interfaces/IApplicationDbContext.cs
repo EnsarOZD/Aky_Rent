@@ -19,6 +19,7 @@ namespace PaletYonetimApplication.Interfaces
 		DbSet<StockMovementEntity> StockMovements { get; }
 		DbSet<TransactionEntity> Transactions { get; }	
 		DbSet<ConfigurationSetting> ConfigurationSettings { get; }
+		DbSet<AuditLogEntity> AuditLogs { get; }
 		Task<int> SaveChangesAsync(CancellationToken cancellationToken);
 	}
 }

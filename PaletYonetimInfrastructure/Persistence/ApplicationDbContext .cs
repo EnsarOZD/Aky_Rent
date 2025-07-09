@@ -23,6 +23,7 @@ namespace PaletYonetimInfrastructure.Persistence
         public DbSet<CustomerEntity> Customers { get; set; }
         public DbSet<RepresentativeEntity> Representatives { get; set; }
 		public DbSet<ConfigurationSetting> ConfigurationSettings { get; set; }
+        public DbSet<AuditLogEntity> AuditLogs { get; set; }
 
 
 

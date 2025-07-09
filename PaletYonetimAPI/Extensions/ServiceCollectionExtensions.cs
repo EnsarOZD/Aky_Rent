@@ -42,6 +42,10 @@ namespace PaletYonetimAPI.Extensions
 
 			// Uygulama servisleri (örneğin: IPrefixService)
 			services.AddScoped<IPrefixService, PrefixService>();
+			services.AddScoped<IStockLevelService, StockLevelService>();
+			services.AddScoped<IBarcodeService, BarcodeService>();
+			services.AddScoped<IAuditLogService, AuditLogService>();
+			services.AddHttpContextAccessor();
 	
 
 			// CORS

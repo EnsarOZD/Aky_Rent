@@ -4,8 +4,10 @@ namespace PaletYonetimApplication.DTO
 {
 		public class PalletDto
 		{
-			public int PalletID { get; set; }
-			public string PalletName { get; set; }
+					public int PalletID { get; set; }
+		public string PalletName { get; set; }
+		public string Barcode { get; set; }
+		public string QRCode { get; set; }
 			public int RackID { get; set; }
 			public int? CustomerID { get; set; }
 			public string Status { get; set; }
