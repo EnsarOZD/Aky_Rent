@@ -40,6 +40,13 @@ namespace PaletYonetimAPI.Controllers
 			if (command == null)
 				return BadRequest("Invalid stock movement data.");
 
+			// Varsayılan değerleri ayarla
+			if (string.IsNullOrEmpty(command.MovementType))
+				command.MovementType = "In";
+			
+			if (string.IsNullOrEmpty(command.MovementReason))
+				command.MovementReason = "Purchase";
+
 			var createdId = await _mediator.Send(command);
 			return CreatedAtAction(nameof(GetById), new { id = createdId }, null);
 		}

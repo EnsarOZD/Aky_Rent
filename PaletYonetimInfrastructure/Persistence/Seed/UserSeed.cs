@@ -18,20 +18,27 @@ namespace PaletYonetimInfrastructure.Persistence.Seed
 				{
 					UserName = adminEmail,
 					Email = adminEmail,
-					FirstName = "Admin",   // Burada varsayılan değer atanıyor
-					LastName = "User",     // Burada varsayılan değer atanıyor
+					FirstName = "Admin",
+					LastName = "User",
 					CreatedTime = DateTime.Now
 				};
-			}
 
-			var result = await userManager.CreateAsync(adminUser, adminPassword);
-			if (result.Succeeded)
+				var result = await userManager.CreateAsync(adminUser, adminPassword);
+				if (result.Succeeded)
+				{
+					// Oluşturulan admin kullanıcısına, Domain katmanında tanımlı yönetici rolünü atıyoruz
+					await userManager.AddToRoleAsync(adminUser, UserRoleEntity.Admin);
+				}
+			}
+			else
 			{
-				// Oluşturulan admin kullanıcısına, Domain katmanında tanımlı yönetici rolünü atıyoruz
-				await userManager.AddToRoleAsync(adminUser, UserRoleEntity.Admin);
+				// Kullanıcı zaten var, sadece rolünü kontrol et
+				var roles = await userManager.GetRolesAsync(adminUser);
+				if (!roles.Contains(UserRoleEntity.Admin))
+				{
+					await userManager.AddToRoleAsync(adminUser, UserRoleEntity.Admin);
+				}
 			}
-
-			// Hata durumlarını loglayabilir veya kullanıcıya bildirebilirsiniz.
 		}
 	}
 }

@@ -12,6 +12,8 @@ namespace PaletYonetimDomain.Entities
 		public int PalletNumber { get; set; } // Benzersiz numara
 		public string PalletName { get; set; }
 		public string Prefix { get; set; }
+		public string Barcode { get; set; } // Palet barkodu
+		public string QRCode { get; set; } // Palet QR kodu
 
 		// İlişkiler
 		public RackEntity Rack { get; set; } // Rack ile ilişki

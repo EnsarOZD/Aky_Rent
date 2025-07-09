@@ -38,6 +38,8 @@ namespace PaletYonetimAPI.Controllers
 		[HttpPost]
 		public async Task<IActionResult> Create([FromBody] CreateProductCommand command)
 		{
+			if (!ModelState.IsValid)
+				return BadRequest(ModelState);
 			if (command == null)
 			{
 				return BadRequest("Invalid product data");
@@ -51,6 +53,8 @@ namespace PaletYonetimAPI.Controllers
 		[HttpPut("{id}")]
 		public async Task<IActionResult> Update(int id, [FromBody] UpdateProductCommand command)
 		{
+			if (!ModelState.IsValid)
+				return BadRequest(ModelState);
 			if (id != command.ProductID)
 			{
 				return BadRequest("Product ID mismatch");

@@ -14,7 +14,12 @@ namespace PaletYonetimInfrastructure.Converters
 
 		public override DateTime Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
 		{
-			return DateTime.ParseExact(reader.GetString(), _format, null);
+			var str = reader.GetString();
+			// Önce ISO 8601 ve diğer standart formatları dene
+			if (DateTime.TryParse(str, out var dt))
+				return dt;
+			// Olmazsa özel formatı dene
+			return DateTime.ParseExact(str, _format, null);
 		}
 
 		public override void Write(Utf8JsonWriter writer, DateTime value, JsonSerializerOptions options)
@@ -22,5 +27,4 @@ namespace PaletYonetimInfrastructure.Converters
 			writer.WriteStringValue(value.ToString(_format));
 		}
 	}
-
 }
